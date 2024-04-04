@@ -1,0 +1,55 @@
+
+.espera-video {
+    width: 300px;
+    height: 300px;
+    background-color: #C489BB;
+}
+
+body{
+    background: unset;
+}
+
+.bloco1{
+    background: url('./img/bg_elemento.png') no-repeat; 
+}
+
+.bloco2 {
+    background: url('./img/bg_bloco2.jpg');
+    background-size: cover;
+}
+
+.bloco3{
+    background: url('./img/bg__bloco3_elemento.png') no-repeat right; 
+}
+
+.bloco4{
+    background: url('./img/bg_bloco4.jpg');
+    background-size: cover;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.imagem-borda{
+    padding:5%;
+    border: red solid;
+    border-radius: 10%;
+    max-width: 250px;
+}
+.borda-esquerda{
+    border-left-width: 6px;
+}
+
+a {
+    color:var(--cor-primaria);
+    text-decoration: unset; 
+}
+
+
+
+
+@media screen and (max-width:1440px) {
+    .borda-esquerda{
+        border-left-width: 5px;
+    }
+}
+
