@@ -18,16 +18,15 @@
 }
 
 body {
-    background-image: url('../../01_experimentacao/img/textura.png');
-    background-image: radial-gradient(farthest-corner at -2% 25%, #92ACCE 0%, transparent 25%), radial-gradient(farthest-corner at 90% 100%, #92ACCE 0%, transparent 45%);
+    background: url('./img/bg_modal4.png') top, url('./img/bg_modal4_inf.png') bottom;
     position: relative;
-	background-repeat: no-repeat !important;
-	background-size: cover !important;
-	background-position: center !important;
-	/* background-attachment: fixed !important; */
-	height: auto;
-	overflow-x: hidden;
+    background-repeat: no-repeat !important;
+    background-size: cover, cover !important;
+    /* background-attachment: fixed !important; */
+    height: auto;
+    overflow-x: hidden;
 }
+
 
 .imagem-borda{
     padding:5%;
@@ -39,8 +38,28 @@ body {
     border-left-width: 6px;
 }
 
+.img-zoom {
+    display: table;
+    position: relative;
+    margin: 0px auto;
+    cursor: pointer;
+}
 
+.img-zoom::after {
+    content: url('./img/bt_visualizar.png');
+    display: block;
+    width: 88px;
+    height: 88px;
+    right: 0%;
+    bottom: 5%;
+    position: absolute;
+    filter: drop-shadow(#333 3px 3px 4px);
+}
 
+.borda-colorida {
+    border: 5px solid transparent;
+    border-radius: 50px;
+}
 
 
 
