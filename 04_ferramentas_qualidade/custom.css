@@ -68,6 +68,7 @@ a:hover {
     position: absolute;
     margin-left: 25%;
     top: 0%;
+    z-index: 1;
 }
 
 .btn-tecnica{
@@ -128,6 +129,27 @@ a:hover {
     margin-left: 46%;
     top: 9%;
     position: absolute;
+}
+
+.bt-1{
+    position: absolute;
+    margin-left: 30.8%;
+    top: -4.5%;
+    z-index: 2;
+}
+
+.bt-2{
+    position: absolute;
+    margin-left: 50.8%;
+    top: 4.7%;
+    z-index: 2;
+}
+
+.bt-3{
+    position: absolute;
+    margin-left: 73%;
+    top: 14.7%;
+    z-index: 2;
 }
 
 
