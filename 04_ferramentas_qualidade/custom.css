@@ -44,12 +44,101 @@ a {
     text-decoration: unset; 
 }
 
+a:hover {
+    color: #ffff;
+}
+
+.botao::before {
+    border-radius: 10px;
+}
+
+.botao {
+    border-radius: 16px;}
+
+
+.painel-caminho{
+    background: url('./img/painel_bg.png') no-repeat center;
+    margin: auto;
+    width: 847px;
+    height: 763px;
+    position: relative;
+}
+
+.btn-brainstorming{
+    position: absolute;
+    margin-left: 25%;
+    top: 0%;
+}
+
+.btn-tecnica{
+    margin-left: 62%;
+    top: 92%;
+    position: absolute;
+}
+
+.btn-5w2h{
+    margin-left: 46%;
+    top: 85%;
+    position: absolute;
+}
+
+.btn-cartas{
+    margin-left: 25%;
+    top: 75%;
+    position: absolute;
+}
+
+.btn-dispersao{
+    margin-left: 46%;
+    top: 64%;
+    position: absolute;
+}
+
+.btn-histograma{
+    margin-left: 65%;
+    top: 57%;
+    position: absolute;
+}
+
+.btn-pareto{
+    margin-left: 47%;
+    top: 46%;
+    position: absolute;
+}
+
+.btn-folha{
+    margin-left: 24%;
+    top: 37%;
+    position: absolute;
+}
+
+.btn-diagrama{
+    margin-left: 47%;
+    top: 27%;
+    position: absolute;
+}
+
+.btn-matriz{
+    margin-left: 68%;
+    top: 19%;
+    position: absolute;
+}
+
+.btn-fluxograma{
+    margin-left: 46%;
+    top: 9%;
+    position: absolute;
+}
+
 
 
 
 @media screen and (max-width:1440px) {
     .borda-esquerda{
         border-left-width: 5px;
+    }
+    .bloco1, .bloco3 {
+        background: none;
     }
 }
 
