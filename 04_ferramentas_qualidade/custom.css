@@ -72,13 +72,13 @@ a:hover {
 }
 
 .btn-tecnica{
-    margin-left: 62%;
+    margin-left: 65%;
     top: 92%;
     position: absolute;
 }
 
 .btn-5w2h{
-    margin-left: 46%;
+    margin-left: 49%;
     top: 85%;
     position: absolute;
 }
@@ -151,6 +151,66 @@ a:hover {
     top: 14.7%;
     z-index: 2;
 }
+
+.bt-4{
+    position: absolute;
+    margin-left: 51%;
+    top: 22.7%;
+    z-index: 2;
+}
+
+.bt-5{
+    position: absolute;
+    margin-left: 28.8%;
+    top: 32.7%;
+    z-index: 2;
+}
+
+.bt-6{
+    position: absolute;
+    margin-left: 50.8%;
+    top: 42%;
+    z-index: 2;
+}
+
+.bt-7{
+    position: absolute;
+    margin-left: 69.8%;
+    top: 53%;
+    z-index: 2;
+}
+
+
+.bt-8{
+    position: absolute;
+    margin-left: 51%;
+    top: 60%;
+    z-index: 2;
+}
+
+.bt-9{
+    position: absolute;
+    margin-left: 29%;
+    top: 71%;
+    z-index: 2;
+}
+
+.bt-10{
+    position: absolute;
+    margin-left: 51.2%;
+    top: 80.5%;
+    z-index: 2;
+}
+
+.bt-11{
+    position: absolute;
+    margin-left: 70.2%;
+    top: 87.5%;
+    z-index: 2;
+}
+
+
+
 
 
 
