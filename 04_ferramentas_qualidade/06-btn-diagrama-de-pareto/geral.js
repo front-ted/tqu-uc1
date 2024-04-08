@@ -46,8 +46,8 @@ function toggleBackgroundImage() {
     isDarkMode = !isDarkMode; // Alternar entre escuro e claro
 
     if (isDarkMode) {
-        button.style.backgroundImage = "url('../assets/images/modo_escuro.svg')";
+        button.style.backgroundImage = "url('../../assets/images/modo_escuro.svg')";
     } else {
-        button.style.backgroundImage = "url('../assets/images/modo_claro.svg')";
+        button.style.backgroundImage = "url('../../assets/images/modo_claro.svg')";
     }
 }

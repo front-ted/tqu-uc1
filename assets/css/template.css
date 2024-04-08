@@ -265,11 +265,13 @@ tbody td:first-child {
 .carousel-control-prev {
     background: url('../images/seta_esq.svg') no-repeat;
     left: -130px;
+    background-color: transparent !important;
 }
 
 .carousel-control-next {
     background: url('../images/seta_dir.svg') no-repeat;
     right: -130px;
+    background-color: transparent !important;
 }
 
 .carousel-indicators {
@@ -285,7 +287,7 @@ tbody td:first-child {
     border-style: solid;
     border-radius: 100%;
     opacity: 1;
-    background-color: #fff;
+    background-color: transparent;
 }
 
 /*splide carousel*/
@@ -929,7 +931,7 @@ tbody td:first-child {
 }
 
 /* Modo alto contraste preto */
-.btn-tema_pagina {
+/* .btn-tema_pagina {
     width: 90px;
     height: 26px;
     position: fixed;
@@ -946,7 +948,23 @@ tbody td:first-child {
     font-size: 13px;
     text-align: center;
     line-height: 26px;
+} */
+
+.btn-tema_pagina {
+    width: 42px;
+    height: 42px;
+    position: fixed;
+    z-index: 900;
+    right: 50px;
+    bottom: 110px;
+    cursor: pointer;
+    transition: all 0.4s;
+    background: url('../images/modo_escuro.svg');
+    background-position: center;
+    background-size: 100%;
+    display: block;
 }
+
 
 .btn-tema_pagina span {
     color: #fff;

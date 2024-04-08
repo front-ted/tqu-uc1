@@ -1,16 +1,15 @@
-
 .espera-video {
     width: 300px;
     height: 300px;
     background-color: #C489BB;
 }
 
-body{
+body {
     background: unset;
 }
 
-.bloco1{
-    background: url('./img/bg_elemento.png') no-repeat; 
+.bloco1 {
+    background: url('./img/bg_elemento.png') no-repeat;
 }
 
 .bloco2 {
@@ -18,30 +17,31 @@ body{
     background-size: cover;
 }
 
-.bloco3{
-    background: url('./img/bg__bloco3_elemento.png') no-repeat right; 
+.bloco3 {
+    background: url('./img/bg__bloco3_elemento.png') no-repeat right;
 }
 
-.bloco4{
+.bloco4 {
     background: url('./img/bg_bloco4.jpg');
     background-size: cover;
     padding-top: 5%;
     padding-bottom: 5%;
 }
 
-.imagem-borda{
-    padding:5%;
+.imagem-borda {
+    padding: 5%;
     border: red solid;
     border-radius: 10%;
     max-width: 250px;
 }
-.borda-esquerda{
+
+.borda-esquerda {
     border-left-width: 6px;
 }
 
 a {
-    color:var(--cor-primaria);
-    text-decoration: unset; 
+    color: var(--cor-primaria);
+    text-decoration: unset;
 }
 
 a:hover {
@@ -53,10 +53,11 @@ a:hover {
 }
 
 .botao {
-    border-radius: 16px;}
+    border-radius: 16px;
+}
 
 
-.painel-caminho{
+.painel-caminho {
     background: url('./img/painel_bg.png') no-repeat center;
     margin: auto;
     width: 847px;
@@ -64,116 +65,116 @@ a:hover {
     position: relative;
 }
 
-.btn-brainstorming{
+.btn-brainstorming {
     position: absolute;
     margin-left: 25%;
     top: 0%;
     z-index: 1;
 }
 
-.btn-tecnica{
+.btn-tecnica {
     margin-left: 65%;
     top: 92%;
     position: absolute;
 }
 
-.btn-5w2h{
+.btn-5w2h {
     margin-left: 49%;
     top: 85%;
     position: absolute;
 }
 
-.btn-cartas{
+.btn-cartas {
     margin-left: 25%;
     top: 75%;
     position: absolute;
 }
 
-.btn-dispersao{
+.btn-dispersao {
     margin-left: 46%;
     top: 64%;
     position: absolute;
 }
 
-.btn-histograma{
+.btn-histograma {
     margin-left: 65%;
     top: 57%;
     position: absolute;
 }
 
-.btn-pareto{
+.btn-pareto {
     margin-left: 47%;
     top: 46%;
     position: absolute;
 }
 
-.btn-folha{
+.btn-folha {
     margin-left: 24%;
     top: 37%;
     position: absolute;
 }
 
-.btn-diagrama{
+.btn-diagrama {
     margin-left: 47%;
     top: 27%;
     position: absolute;
 }
 
-.btn-matriz{
+.btn-matriz {
     margin-left: 68%;
     top: 19%;
     position: absolute;
 }
 
-.btn-fluxograma{
+.btn-fluxograma {
     margin-left: 46%;
     top: 9%;
     position: absolute;
 }
 
-.bt-1{
+.bt-1 {
     position: absolute;
     margin-left: 30.8%;
     top: -4.5%;
     z-index: 2;
 }
 
-.bt-2{
+.bt-2 {
     position: absolute;
     margin-left: 50.8%;
     top: 4.7%;
     z-index: 2;
 }
 
-.bt-3{
+.bt-3 {
     position: absolute;
     margin-left: 73%;
     top: 14.7%;
     z-index: 2;
 }
 
-.bt-4{
+.bt-4 {
     position: absolute;
     margin-left: 51%;
     top: 22.7%;
     z-index: 2;
 }
 
-.bt-5{
+.bt-5 {
     position: absolute;
     margin-left: 28.8%;
     top: 32.7%;
     z-index: 2;
 }
 
-.bt-6{
+.bt-6 {
     position: absolute;
     margin-left: 50.8%;
     top: 42%;
     z-index: 2;
 }
 
-.bt-7{
+.bt-7 {
     position: absolute;
     margin-left: 69.8%;
     top: 53%;
@@ -181,28 +182,28 @@ a:hover {
 }
 
 
-.bt-8{
+.bt-8 {
     position: absolute;
     margin-left: 51%;
     top: 60%;
     z-index: 2;
 }
 
-.bt-9{
+.bt-9 {
     position: absolute;
     margin-left: 29%;
     top: 71%;
     z-index: 2;
 }
 
-.bt-10{
+.bt-10 {
     position: absolute;
     margin-left: 51.2%;
     top: 80.5%;
     z-index: 2;
 }
 
-.bt-11{
+.bt-11 {
     position: absolute;
     margin-left: 70.2%;
     top: 87.5%;
@@ -216,11 +217,90 @@ a:hover {
 
 
 @media screen and (max-width:1440px) {
-    .borda-esquerda{
+    .borda-esquerda {
         border-left-width: 5px;
     }
-    .bloco1, .bloco3 {
+
+    .bloco1,
+    .bloco3 {
         background: none;
     }
 }
 
+@media screen and (max-width:1000px) {
+    .painel-caminho {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .painel-caminho {
+        scale: 0.8;
+    }
+
+    .btn-brainstorming {
+        position: absolute;
+        margin-left: -4%;
+        top: -3%;
+        z-index: 1;
+    }
+
+    .bt-1 {
+        position: absolute;
+        margin-left: 10.8%;
+        top: -7.5%;
+        z-index: 2;
+    }
+
+    .btn-fluxograma {
+        margin-left: 39%;
+        top: 9%;
+        position: absolute;
+    }
+
+    .btn-matriz {
+        margin-left: 86%;
+        top: 17%;
+        position: absolute;
+    }
+
+    .bt-3 {
+        position: absolute;
+        margin-left: 93%;
+        top: 12.7%;
+        z-index: 2;
+    }
+
+    .btn-folha {
+        margin-left: -8%;
+        top: 37%;
+        position: absolute;
+    }
+
+    .bt-5 {
+        position: absolute;
+        margin-left: 3.8%;
+        top: 32.7%;
+        z-index: 2;
+    }
+
+    .btn-diagrama {
+        margin-left: 39%;
+        top: 29%;
+        position: absolute;
+    }
+
+    .bt-4 {
+        position: absolute;
+        margin-left: 50%;
+        top: 24.7%;
+        z-index: 2;
+    }
+
+
+
+    
+
+
+}

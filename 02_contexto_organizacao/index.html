@@ -44,8 +44,7 @@
             <div class="container">
                 <h1 id="nome-curso" class="only-print">Técnico em Qualidade</h1>
             </div>
-            <div class="btn-tema_pagina no-print">Modo <span>escuro</span></div>
-
+            <div id="toggleButton" class="btn-tema_pagina no-print" onclick="toggleBackgroundImage()"></div>
         </div>
     </header>
     <!--Menu lateral-->
@@ -60,15 +59,15 @@
         </div>
         <nav id="nav-offcanvas" class="offcanvas-body">
             <ul>
-                <li><a href="#titulo1">INTRODUÇÃO</a></li>
-                <li><a href="#titulo2">ORGANIZAÇÃO</a></li>
+                <li><a href="#titulo1">Introdução</a></li>
+                <li><a href="#titulo2">Organizações</a></li>
                 <li class="espacamento"><a href="#titulo3">Partes interessadas</a></li>
                 <li class="espacamento"><a href="#titulo4">Missão</a></li>
                 <li class="espacamento"><a href="#titulo5">Visão </a></li>
                 <li class="espacamento"><a href="#titulo6">Valores</a></li>
                 <li class="espacamento"><a href="#titulo7">Objetivos</a></li>
-                <li><a href="#titulo8">DESAFIO</a></li>
-                <li><a href="#titulo9">ENCERRAMENTO</a></li>
+                <li><a href="#titulo8">Desafio</a></li>
+                <li><a href="#titulo9">Encerramento</a></li>
             </ul>
         </nav>
     </div>
@@ -78,34 +77,31 @@
         <div class="layer-preta no-print"></div>
         <section class="paginas">
             <div class="container pagina">
-                <h2> CONTEXTO DA ORGANIZAÇÃO: MISSÃO, VISÃO, VALORES, OBJETIVOS </h2>
-                <h3 id="titulo1">INTRODUÇÃO</h3>
+                <h2>Contexto da organização: missão, visão, valores, objetivos</h2>
+                <h3 id="titulo1">Introdução</h3>
                 <p>
                     Para o profissional da área da qualidade, compreender o contexto organizacional é fundamental para
-                    garantir padrões de excelência e eficiência nos processos. Dentro desse contexto, a definição clara
-                    da
-                    missão, visão, valores e objetivos de uma organização desempenha um papel crucial. Estes
-                    elementos formam a base da identidade e direcionamento estratégico de uma organização, delineando
-                    seu
-                    propósito, aspirações futuras, comportamento ético e metas tangíveis, respectivamente. Neste
-                    conhecimento, estudaremos cada um desses elementos, destacando sua importância e como são aplicados
-                    no
-                    contexto organizacional.
+                    garantir padrões de excelência e eficiência nos processos. Neste contexto, a definição clara da
+                    missão, da visão, dos valores e dos objetivos de uma organização desempenha um papel crucial. Esses
+                    elementos formam a base da identidade e do direcionamento estratégico de uma organização, delineando
+                    seu propósito, suas aspirações futuras, seu comportamento ético e as metas tangíveis,
+                    respectivamente. Neste conhecimento, serão estudados cada um desses elementos, destacando sua
+                    importância e como são aplicados no contexto organizacional.
                 </p>
                 <div class="imagem-divisoria">
                     <img src="./img/div.png" class="img-fluid mx-auto d-block mt-5 mb-5 no-print">
                 </div>
                 <h3 id="titulo2">Organizações</h3>
                 <p>
-                    As organizações desempenham um papel crucial na sociedade contemporânea sendo responsáveis pela
-                    geração
-                    e distribuição de riqueza. Elas não apenas melhoram a qualidade de vida das pessoas, mas também
-                    impulsionam o avanço econômico e social (MATIAS-PEREIRA, 2011). Nações mais desenvolvidas prosperam
-                    devido à presença de organizações bem-sucedidas. Essas organizações não apenas criam e inovam, mas
-                    também produzem produtos e serviços com alto valor agregado, desenvolvem tecnologias, e, assim,
-                    satisfazem de maneira eficaz as necessidades da sociedade.
+                    As organizações desempenham um papel crucial na sociedade contemporânea, sendo responsáveis pela
+                    geração e distribuição de riqueza. Elas não apenas melhoram a qualidade de vida das pessoas, mas
+                    também impulsionam o avanço econômico e social (Matias-Pereira, 2011). Nações mais desenvolvidas
+                    prosperam devido à presença de organizações bem-sucedidas. Essas organizações não apenas criam e
+                    inovam, mas também produzem produtos e serviços com alto valor agregado, desenvolvem tecnologias e,
+                    assim, satisfazem de maneira eficaz as necessidades da sociedade.</p>
+                <p>
+                    Confira alguns exemplos de tipos de organizações:
                 </p>
-                <p>Veja abaixo alguns exemplos de tipos de organizações:</p>
                 <p class="no-print" aria-hidden="true">Clique ou toque para visualizar o conteúdo:</p>
                 <div class="no-print" aria-hidden="true">
                     <div class="accordion" id="accordionExample">
@@ -119,14 +115,13 @@
                             <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <p>Sua finalidade é gerar retorno financeiro para
-                                        seus proprietários ou acionistas, ou seja, obter lucros superiores ao capital
-                                        investido. Neste tipo de organização as estratégias relacionadas a custos e
-                                        preços são a favor da empresa. Alguns exemplos são empresas de capital aberto ou
-                                        sociedades anônimas (Apple, Microsoft e Coca-Cola), empresas de capital fechado
-                                        (Cargill, Koch Industries), corporações de capital privado, cooperativas
-                                        (Sicredi e Unimed), grupos de empresas ou holdings (J&F Investimentos e BRF),
-                                        etc.
+                                    <p>Sua finalidade é gerar retorno financeiro para seus proprietários ou acionistas,
+                                        ou seja, obter lucros superiores ao capital investido. Nesse tipo de
+                                        organização, as estratégias relacionadas a custos e preços são a favor da
+                                        empresa. Alguns exemplos são empresas de capital aberto ou sociedades anônimas
+                                        (Apple, Microsoft e Coca-Cola), empresas de capital fechado (Cargill, Koch
+                                        Industries), corporações de capital privado, cooperativas (Sicredi e Unimed),
+                                        grupos de empresas ou <i>holdings</i> (J&F Investimentos e BRF) etc.
                                     </p>
                                 </div>
                             </div>
@@ -141,16 +136,14 @@
                             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <p>São criadas com o propósito de fornecer um
-                                        serviço específico à comunidade, elas dependem de contribuições de membros e
-                                        doações para suas atividades. Diferente da anterior, as escolhas
-                                        estratégicas
-                                        desse tipo de organizações são em favor da sociedade. Vale salientar, que os
-                                        fundos angariados não são distribuídos como lucro para os responsáveis pela
-                                        gestão da organização. Alguns exemplos são as organizações não
-                                        governamentais
-                                        (ONGs) (Instituto Ayrton Senna), organizações civis (Instituto Brasileiro de
-                                        Defesa do Consumidor) e fundações (Fundação Getúlio Vargas).
+                                    <p>São criadas com o propósito de fornecer um serviço específico à comunidade e
+                                        dependem de contribuições de membros e doações para suas atividades.
+                                        Diferentemente da anterior, as escolhas estratégicas desse tipo de organização
+                                        são em favor da sociedade. Vale salientar que os fundos angariados não são
+                                        distribuídos como lucro para os responsáveis pela gestão da organização. Alguns
+                                        exemplos são as organizações não governamentais – ONGs (Instituto Ayrton Senna),
+                                        as organizações civis (Instituto Brasileiro de Defesa do Consumidor) e as
+                                        fundações (Fundação Getulio Vargas).
                                     </p>
                                 </div>
                             </div>
@@ -165,9 +158,9 @@
                             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <p>São instituições públicas estabelecidas para executar a
-                                        administração governamental de um país, incluem os ministérios, as secretarias e
-                                        as agências de receita, por exemplo.
+                                    <p>São instituições públicas estabelecidas para executar a administração
+                                        governamental de um país e incluem os ministérios, as secretarias e as agências
+                                        de receita, por exemplo.
                                     </p>
                                 </div>
                             </div>
@@ -175,41 +168,33 @@
                     </div>
                 </div>
                 <div class="acessivel only-print">
+                    <h3>Organização com fins lucrativos </h3>
                     <p>
-                        Organização com fins lucrativos: sua finalidade é gerar retorno financeiro para seus
-                        proprietários
-                        ou acionistas, ou seja, obter lucros superiores ao capital investido. Neste tipo de organização
-                        as
-                        estratégias relacionadas a custos e preços são a favor da empresa. Alguns exemplos são empresas
-                        de
-                        capital aberto ou sociedades anônimas (Apple, Microsoft e Coca-Cola), empresas de capital
-                        fechado
-                        (Cargill, Koch Industries), corporações de capital privado, cooperativas (Sicredi e Unimed),
-                        grupos
-                        de empresas ou holdings (J&F Investimentos e BRF), etc.
+                        Sua finalidade é gerar retorno financeiro para seus proprietários ou acionistas, ou seja, obter
+                        lucros superiores ao capital investido. Nesse tipo de organização, as estratégias relacionadas a
+                        custos e preços são a favor da empresa. Alguns exemplos são empresas de capital aberto ou
+                        sociedades anônimas (Apple, Microsoft e Coca-Cola), empresas de capital fechado (Cargill, Koch
+                        Industries), corporações de capital privado, cooperativas (Sicredi e Unimed), grupos de empresas
+                        ou <i>holdings</i> (J&F Investimentos e BRF) etc.
                     </p>
+                    <h3>Organizações sem fins lucrativos</h3>
                     <p>
-                        Organizações sem fins lucrativos: são criadas com o propósito de fornecer um serviço específico
-                        à
-                        comunidade, elas dependem de contribuições de membros e doações para suas atividades. Diferente
-                        da
-                        anterior, as escolhas estratégicas desse tipo de organizações são em favor da sociedade. Vale
-                        salientar, que os fundos angariados não são distribuídos como lucro para os responsáveis pela
-                        gestão
-                        da organização. Alguns exemplos são as organizações não governamentais (ONGs) (Instituto Ayrton
-                        Senna, organizações civis (Instituto Brasileiro de Defesa do Consumidor) e fundações (Fundação
-                        Getúlio Vargas).
+                        São criadas com o propósito de fornecer um serviço específico à comunidade e dependem de
+                        contribuições de membros e doações para suas atividades. Diferentemente da anterior, as escolhas
+                        estratégicas desse tipo de organização são em favor da sociedade. Vale salientar que os fundos
+                        angariados não são distribuídos como lucro para os responsáveis pela gestão da organização.
+                        Alguns exemplos são as organizações não governamentais – ONGs (Instituto Ayrton Senna), as
+                        organizações civis (Instituto Brasileiro de Defesa do Consumidor) e as fundações (Fundação
+                        Getulio Vargas).
                     </p>
+                    <h3>Organizações estatais</h3>
                     <p>
-                        Organizações estatais: são instituições públicas estabelecidas para executar a administração
-                        governamental de um país, incluem os ministérios, as secretarias e as agências de receita, por
-                        exemplo.
+                        São instituições públicas estabelecidas para executar a administração governamental de um país e
+                        incluem os ministérios, as secretarias e as agências de receita, por exemplo.
                     </p>
                 </div>
-                <p>
-                    As organizações possuem características em comum, mas que podem variar com o tipo, tamanho e
-                    contexto em
-                    que operam. As principais características das organizações são (BATEMAN; SNELL, 2012):
+                <p>As organizações têm características em comum, mas que podem variar com o tipo, tamanho e contexto em
+                    que operam. Segundo Bateman e Snell (2012), as principais características das organizações são:
                 </p>
                 <p class="no-print" aria-hidden="true">Clique ou toque para visualizar o conteúdo:</p>
                 <div class="painel-organizacoes no-print mb-5 d-none d-sm-block" aria-hidden="true">
@@ -286,13 +271,10 @@
                                 <div class="modal-body">
                                     <p>
                                         Define os níveis de autoridade e responsabilidade, o que auxilia na definição
-                                        das
-                                        relações de poder e distribuição de tarefas dentro da organização. Atualmente, a
-                                        maioria
-                                        dos líderes corporativos está convencida de que uma estrutura organizacional com
-                                        menos
-                                        níveis hierárquicos resulta em uma empresa mais eficiente, ágil e economicamente
-                                        eficaz;
+                                        das relações de poder e na distribuição de tarefas dentro da organização.
+                                        Atualmente, a maioria dos líderes corporativos está convencida de que uma
+                                        estrutura organizacional com menos níveis hierárquicos resulta em uma empresa
+                                        mais eficiente, ágil e economicamente eficaz.
                                     </p>
                                     <div class="modal-footer">
                                         <button type="button" class="botao hvr-sweep-to-right"
@@ -315,9 +297,9 @@
                             <div class="grafismo grafismoLeft">
                                 <div class="modal-body">
                                     <p>
-                                        As tarefas dentro de uma organização são divididas entre os membros da equipe de
-                                        acordo com suas habilidades, conhecimentos e funções específicas. Isso ajuda a
-                                        aumentar a eficiência e a produtividade;
+                                        As tarefas em uma organização são divididas entre os membros da equipe de acordo
+                                        com suas habilidades, seus conhecimentos e suas funções específicas. Isso ajuda
+                                        a aumentar a eficiência e a produtividade.
                                     </p>
                                     <div class="modal-footer">
                                         <button type="button" class="botao hvr-sweep-to-right"
@@ -340,10 +322,9 @@
                             <div class="grafismo grafismoLeft">
                                 <div class="modal-body">
                                     <p>
-                                        As tarefas de uma empresa não podem ser completamente independentes, por isso as
-                                        organizações dependem de procedimentos de coordenação e comunicação para ligar
-                                        as
-                                        diversas equipes na realização da sua missão geral;
+                                        As tarefas de uma empresa não podem ser completamente independentes, por isso,
+                                        as organizações dependem de procedimentos de coordenação e comunicação para
+                                        ligar as diversas equipes à realização da sua missão geral.
                                     </p>
                                     <div class="modal-footer">
                                         <button type="button" class="botao hvr-sweep-to-right"
@@ -367,10 +348,9 @@
                                 <div class="modal-body">
                                     <p>
                                         A organização precisa adquirir, processar e reagir o grande volume de
-                                        informações
-                                        vindas das partes interessadas, ou seja, se adaptar a demanda do ambiente
-                                        externo
-                                        que é dinâmico, de forma eficaz visando a sua sobrevivência e sucesso;
+                                        informações vindas das partes interessadas, ou seja, adaptar-se à demanda do
+                                        ambiente externo, que é dinâmico, de forma eficaz, visando à sobrevivência e ao
+                                        sucesso.
                                     </p>
                                     <div class="modal-footer">
                                         <button type="button" class="botao hvr-sweep-to-right"
@@ -394,8 +374,7 @@
                                 <div class="modal-body">
                                     <p>
                                         Representa normas, valores, crenças e comportamentos compartilhados pelos
-                                        membros de
-                                        cada organização. Ela orienta o comportamento profissional;
+                                        membros de cada organização. Ela orienta o comportamento profissional.
                                     </p>
                                     <div class="modal-footer">
                                         <button type="button" class="botao hvr-sweep-to-right"
@@ -419,10 +398,10 @@
                                 <div class="modal-body">
                                     <p>
                                         Capacidade de se adaptar e mudar ao longo do tempo para enfrentar desafios e
-                                        aproveitar oportunidades. A flexibilidade, inovação e aprendizado com
-                                        experiências
-                                        passadas são essenciais para realizar com mais eficiência e eficácia as tarefas
-                                        básicas e, também, para manter a vantagem sobre os competidores;
+                                        aproveitar oportunidades. A flexibilidade, a inovação e o aprendizado com
+                                        experiências passadas são essenciais para realizar com mais eficiência e
+                                        eficácia as tarefas básicas e, também, para manter a vantagem sobre os
+                                        competidores.
                                     </p>
                                     <div class="modal-footer">
                                         <button type="button" class="botao hvr-sweep-to-right"
@@ -447,8 +426,7 @@
                                     <p>
                                         É a razão de existir, o propósito fundamental que guia as atividades e define o
                                         impacto da organização na sociedade. Ela reflete o que a organização faz, para
-                                        quem
-                                        e como, fornecendo uma direção clara para suas operações.
+                                        quem e como, fornecendo uma direção clara para suas operações.
                                     </p>
                                     <div class="modal-footer">
                                         <button type="button" class="botao hvr-sweep-to-right"
@@ -472,9 +450,8 @@
                                 <div class="modal-body">
                                     <p>
                                         Representa a aspiração futura da organização, descrevendo onde ela quer chegar a
-                                        longo prazo. Ela é alvo almejado de sucesso futuro, que motiva e inspira os
-                                        membros
-                                        da organização;
+                                        longo prazo. A visão é alvo de sucesso futuro, que motiva e inspira os membros
+                                        da organização.
                                     </p>
                                     <div class="modal-footer">
                                         <button type="button" class="botao hvr-sweep-to-right"
@@ -498,10 +475,9 @@
                                 <div class="modal-body">
                                     <p>
                                         São os princípios fundamentais e as crenças que orientam o comportamento e as
-                                        decisões da organização e seus membros. Eles influenciam a cultura, as relações
-                                        com
-                                        partes interessadas, as políticas e práticas operacionais como um guia
-                                        comportamental.
+                                        decisões da organização e de seus membros. Eles influenciam a cultura, as
+                                        relações com partes interessadas, as políticas e práticas operacionais como um
+                                        guia comportamental.
                                     </p>
                                     <div class="modal-footer">
                                         <button type="button" class="botao hvr-sweep-to-right"
@@ -525,10 +501,9 @@
                                 <div class="modal-body">
                                     <p>
                                         São os resultados esperados que orientam as atividades da organização. Eles são
-                                        relacionados aos níveis hierárquicos, geralmente quantificáveis e específicos,
-                                        podem
-                                        estar ligados a produtividade, lucratividade, crescimento, impacto social, entre
-                                        outros fatores.
+                                        relacionados aos níveis hierárquicos, geralmente quantificáveis e específicos, e
+                                        podem estar ligados a produtividade, lucratividade, crescimento, impacto social,
+                                        entre outros fatores.
                                     </p>
                                     <div class="modal-footer">
                                         <button type="button" class="botao hvr-sweep-to-right"
@@ -542,94 +517,105 @@
                 <!-- Fim modais painel -->
                 <div class="acessivel only-print">
                     <ul>
-                        <li>Estrutura Hierárquica: define os níveis de autoridade e responsabilidade, o que auxilia na
-                            definição
-                            das relações de poder e distribuição de tarefas dentro da organização. Atualmente, a maioria
-                            dos
-                            líderes corporativos está convencida de que uma estrutura organizacional com menos níveis
-                            hierárquicos resulta em uma empresa mais eficiente, ágil e economicamente eficaz;
+                        <li>
+                            <h3>Estrutura Hierárquica</h3>: Define os níveis de autoridade e responsabilidade, o que
+                            auxilia na definição das relações de poder e na distribuição de tarefas dentro da
+                            organização. Atualmente, a maioria dos líderes corporativos está convencida de que uma
+                            estrutura organizacional com menos níveis hierárquicos resulta em uma empresa mais
+                            eficiente, ágil e economicamente eficaz.
                         </li>
-                        <li>Divisão de Trabalho: as tarefas dentro de uma organização são divididas entre os membros da
-                            equipe de acordo com suas habilidades, conhecimentos e funções específicas. Isso ajuda a
-                            aumentar a eficiência e a produtividade;
+                        <li>
+                            <h3>Divisão de Trabalho</h3>: As tarefas em uma organização são divididas entre os membros
+                            da equipe de acordo com suas habilidades, seus conhecimentos e suas funções específicas.
+                            Isso ajuda a aumentar a eficiência e a produtividade.
                         </li>
-                        <li>Coordenação e Comunicação: as tarefas de uma empresa não podem ser completamente
-                            independentes, por isso as organizações dependem de procedimentos de coordenação e
-                            comunicação para ligar as diversas equipes na realização da sua missão geral;
+                        <li>
+                            <h3>Coordenação e Comunicação</h3>: As tarefas de uma empresa não podem ser completamente
+                            independentes, por isso, as organizações dependem de procedimentos de coordenação e
+                            comunicação para ligar as diversas equipes à realização da sua missão geral.
                         </li>
-                        <li>Ambiente Externo: a organização precisa adquirir, processar e reagir o grande volume de
-                            informações vindas das partes interessadas, ou seja, se adaptar a demanda do ambiente
-                            externo que é dinâmico, de forma eficaz visando a sua sobrevivência e sucesso;
+                        <li>
+                            <h3>Ambiente Externo</h3>: A organização precisa adquirir, processar e reagir o grande
+                            volume de informações vindas das partes interessadas, ou seja, adaptar-se à demanda do
+                            ambiente externo, que é dinâmico, de forma eficaz, visando à sobrevivência e ao sucesso.
                         </li>
-                        <li>Cultura Organizacional: representa normas, valores, crenças e comportamentos compartilhados
-                            pelos membros de cada organização. Ela orienta o comportamento profissional;
+                        <li>
+                            <h3>Cultura Organizacional</h3>: Representa normas, valores, crenças e comportamentos
+                            compartilhados
+                            pelos membros de cada organização. Ela orienta o comportamento profissional.
                         </li>
-                        <li>Adaptação e Mudança: capacidade de se adaptar e mudar ao longo do tempo para enfrentar
-                            desafios e aproveitar oportunidades. A flexibilidade, inovação e aprendizado com
-                            experiências passadas são essenciais para realizar com mais eficiência e eficácia as tarefas
-                            básicas e, também, para manter a vantagem sobre os competidores;
+                        <li>
+                            <h3>Adaptação e Mudança</h3>: Capacidade de se adaptar e mudar ao longo do tempo para
+                            enfrentar desafios e aproveitar oportunidades. A flexibilidade, a inovação e o aprendizado
+                            com experiências passadas são essenciais para realizar com mais eficiência e eficácia as
+                            tarefas básicas e, também, para manter a vantagem sobre os competidores.
                         </li>
-                        <li>Missão: é a razão de existir, o propósito fundamental que guia as atividades e define o
+                        <li>
+                            <h3>Missão</h3>: é a razão de existir, o propósito fundamental que guia as atividades e
+                            define o
                             impacto da organização na sociedade. Ela reflete o que a organização faz, para quem e como,
                             fornecendo uma direção clara para suas operações.
                         </li>
-                        <li>Visão: representa a aspiração futura da organização, descrevendo onde ela quer chegar a
-                            longo prazo. Ela é alvo almejado de sucesso futuro, que motiva e inspira os membros da
-                            organização;
+                        <li>
+                            <h3>Visão</h3>: rRepresenta a aspiração futura da organização, descrevendo onde ela quer
+                            chegar a
+                            longo prazo. A visão é alvo de sucesso futuro, que motiva e inspira os membros da
+                            organização.
                         </li>
-                        <li>Valores: são os princípios fundamentais e as crenças que orientam o comportamento e as
-                            decisões da organização e seus membros. Eles influenciam a cultura, as relações com partes
-                            interessadas, as políticas e práticas operacionais como um guia comportamental.
+                        <li>
+                            <h3>Valores</h3>: São os princípios fundamentais e as crenças que orientam o comportamento e
+                            as
+                            decisões da organização e de seus membros. Eles influenciam a cultura, as relações com
+                            partes interessadas, as políticas e práticas operacionais como um guia comportamental.
                         </li>
-                        <li>Objetivos: são os resultados esperados que orientam as atividades da organização. Eles são
-                            relacionados aos níveis hierárquicos, geralmente quantificáveis e específicos, podem estar
+                        <li>
+                            <h3>Objetivos</h3>: São os resultados esperados que orientam as atividades da organização.
+                            Eles são
+                            relacionados aos níveis hierárquicos, geralmente quantificáveis e específicos, e podem estar
                             ligados a produtividade, lucratividade, crescimento, impacto social, entre outros fatores.
                         </li>
                     </ul>
                 </div>
                 <p>
-                    Você verá de forma mais detalhada a missão, visão, valores e objetivos no texto a seguir. Mas ante,
-                    além
-                    das características previamente mencionadas, ao abordarmos organizações, torna-se fundamental o
-                    conhecimento das partes interessadas. Tais partes englobam todos os elementos (indivíduos,
-                    instituições,
-                    grupos, entidades governamentais, entre outros) que, de alguma maneira, influenciam ou são
-                    influenciados
-                    pela organização.
+                    Mais adiante, neste mesmo conhecimento, você aprenderá mais detalhes sobre missão, visão, valores e
+                    objetivos. Antes, além das características previamente mencionadas, para abordar organizações, é
+                    fundamental o conhecimento das partes interessadas. Tais partes englobam todos os elementos
+                    (indivíduos, instituições, grupos, entidades governamentais, entre outros) que, de alguma maneira,
+                    influenciam ou são influenciados pela organização.
                 </p>
                 <div class="grafismo">
                     <div class="destaque borda-colorida icone importante">
                         <p>
-                            É importante ressaltar que a norma ISO 9001 promove ativamente a participação das
-                            organizações
-                            no envolvimento das partes interessadas em suas tomadas de decisão. Isso implica levar em
-                            conta
-                            as opiniões e preocupações dessas partes ao desenvolver políticas, estabelecer objetivos e
-                            implementar medidas para atender aos requisitos do sistema de gestão.
+                            É importante ressaltar que a norma ISO 9001:2015 promove ativamente a participação das
+                            organizações no envolvimento das partes interessadas em suas tomadas de decisão. Isso
+                            implica levar em conta as opiniões e preocupações dessas partes ao desenvolver políticas,
+                            estabelecer objetivos e implementar medidas para atender aos requisitos do sistema de
+                            gestão.
                         </p>
                     </div>
                 </div>
                 <p>
-                    Assim, é relevante o entendimento e conhecimento sobre as partes interessadas nos ambientes
-                    organizacionais. No próximo tópico, aprofundaremos ainda mais nesse tema.
+                    Assim, é relevante o entendimento e conhecimento das partes interessadas nos ambientes
+                    organizacionais. Aprofunde mais seus conhecimentos neste assunto.
                 </p>
                 <div class="imagem-divisoria">
                     <img src="./img/div.png" class="img-fluid mx-auto d-block mt-5 mb-5 no-print">
                 </div>
                 <h4 id="titulo3">Partes interessadas</h4>
                 <p>
-                    As partes Interessada correspondem a todos os elementos (pessoas, instituições, grupos, órgãos
+                    As partes interessadas correspondem a todos os elementos (pessoas, instituições, grupos, órgãos
                     governamentais etc.) que de alguma forma afetam ou são afetados pela organização.
                 </p>
                 <p>
-                    Também são chamados de <i>stakeholders</i> e compõe os grupos ou indivíduos que têm interesse ou são
-                    afetados
-                    pelas operações e desempenho da empresa (ROCHA; GOLDSCHMIDT, 2010).
+                    “Partes interessadas” também são chamadas de <i>stakeholders</i> e compõem os grupos ou indivíduos
+                    que têm
+                    interesse ou são afetados pelas operações e pelo desempenho da empresa (Rocha; Goldschmidt, 2010).
                 </p>
                 <p>
                     As empresas não operam isoladamente, estão interligadas a uma rede de relacionamentos com diversos
                     <i>stakeholders</i>, cada um com expectativas, interesses e impactos específicos. Os
-                    <i>stakeholders</i> podem ser:
+                    <i>stakeholders</i> podem ser os
+                    seguintes:
                 </p>
                 <p class="no-print" aria-hidden="true">Clique ou toque para visualizar o conteúdo:</p>
                 <div class="no-print" aria-hidden="true">
@@ -645,7 +631,7 @@
                                 data-bs-parent="#accordionExample2">
                                 <div class="accordion-body">
                                     <p>Outras organizações ou consumidores que contratam os serviços ou compram os
-                                        produtos ofertados;
+                                        produtos ofertados
                                     </p>
                                 </div>
                             </div>
@@ -661,7 +647,7 @@
                                 data-bs-parent="#accordionExample2">
                                 <div class="accordion-body">
                                     <p>Funcionários da empresa que desempenham um papel fundamental na entrega dos
-                                        serviços ou produtos e na implementação da estratégia;
+                                        serviços ou produtos e na implementação da estratégia
                                     </p>
                                 </div>
                             </div>
@@ -678,7 +664,7 @@
                                 data-bs-parent="#accordionExample2">
                                 <div class="accordion-body">
                                     <p>Indivíduos ou entidades que possuem ações da empresa e têm interesse no seu
-                                        desempenho financeiro e sucesso a longo prazo;
+                                        desempenho financeiro e sucesso a longo prazo
                                     </p>
                                 </div>
                             </div>
@@ -695,7 +681,7 @@
                                 data-bs-parent="#accordionExample2">
                                 <div class="accordion-body">
                                     <p>Outras empresas ou organizações que colaboram com iniciativas conjuntas,
-                                        parcerias estratégicas ou fornecimento de recursos;
+                                        parcerias estratégicas ou fornecimento de recursos
                                     </p>
                                 </div>
                             </div>
@@ -711,9 +697,9 @@
                             <div id="collapseThree5" class="accordion-collapse collapse" aria-labelledby="headingThree"
                                 data-bs-parent="#accordionExample2">
                                 <div class="accordion-body">
-                                    <p>Residentes e organizações na comunidade onde a empresa opera, que podem ser
-                                        afetados por suas atividades e que podem se beneficiar ou ser impactados por
-                                        suas práticas de responsabilidade social corporativa;
+                                    <p>Residentes e organizações da comunidade na qual a empresa opera, que podem ser
+                                        afetados pelas atividades da organização e que podem se beneficiar ou ser
+                                        impactados pelas práticas de responsabilidade social corporativa
                                     </p>
                                 </div>
                             </div>
@@ -730,9 +716,9 @@
                                 data-bs-parent="#accordionExample2">
                                 <div class="accordion-body">
                                     <p>Agências governamentais e outros órgãos reguladores que supervisionam e
-                                        regulamentam as atividades da empresa, como por exemplo o Instituto Nacional de
-                                        Metrologia, Qualidade e Tecnologia (INMETRO), Ministério da Agricultura e
-                                        Pecuária (MAPA), Ministério da Educação (MEC);
+                                        regulamentam as atividades da empresa, como, por exemplo, o Instituto Nacional
+                                        de Metrologia, Qualidade e Tecnologia (Inmetro), o Ministério da Agricultura e
+                                        Pecuária (MAPA), o Ministério da Educação (MEC)
                                     </p>
                                 </div>
                             </div>
@@ -749,7 +735,7 @@
                                 data-bs-parent="#accordionExample2">
                                 <div class="accordion-body">
                                     <p>Empresas ou indivíduos que fornecem bens e serviços essenciais para as operações
-                                        da empresa;
+                                        da empresa
                                     </p>
                                 </div>
                             </div>
@@ -766,7 +752,7 @@
                                 data-bs-parent="#accordionExample2">
                                 <div class="accordion-body">
                                     <p>Outras empresas que operam no mesmo setor e que podem impactar a posição
-                                        competitiva;
+                                        competitiva
                                     </p>
                                 </div>
                             </div>
@@ -782,9 +768,9 @@
                             <div id="collapseThree9" class="accordion-collapse collapse" aria-labelledby="headingThree"
                                 data-bs-parent="#accordionExample2">
                                 <div class="accordion-body">
-                                    <p>Grupos do setor que representam e apoiam os interesses das empresas, por exemplo
+                                    <p>Grupos do setor que representam e apoiam os interesses das empresas, por exemplo,
                                         os Conselhos Regionais de Engenharia e Agronomia (CREA) e Ordem dos Advogados do
-                                        Brasil (OAB).
+                                        Brasil (OAB)
                                     </p>
                                 </div>
                             </div>
@@ -793,55 +779,59 @@
                 </div>
                 <div class="acessivel only-print">
                     <ul>
-                        <li>Clientes: outras organizações ou consumidores que contratam os serviços ou compram os
-                            produtos ofertados; </li>
-                        <li>Colaboradores: funcionários da empresa que desempenham um papel fundamental na entrega dos
-                            serviços ou produtos e na implementação da estratégia; </li>
-                        <li>Acionistas e proprietários: indivíduos ou entidades que possuem ações da empresa e têm
-                            interesse no seu desempenho financeiro e sucesso a longo prazo; </li>
-                        <li>Parceiros de negócios: outras empresas ou organizações que colaboram com iniciativas
-                            conjuntas, parcerias estratégicas ou fornecimento de recursos; </li>
-                        <li>Comunidade local: residentes e organizações na comunidade onde a empresa opera, que podem
-                            ser afetados por suas atividades e que podem se beneficiar ou ser impactados por suas
-                            práticas de responsabilidade social corporativa; </li>
-                        <li>Órgãos reguladores: agências governamentais e outros órgãos reguladores que supervisionam e
-                            regulamentam as atividades da empresa, como por exemplo o Instituto Nacional de Metrologia,
-                            Qualidade e Tecnologia (INMETRO), Ministério da Agricultura e Pecuária (MAPA), Ministério da
-                            Educação (MEC); </li>
-                        <li>Fornecedores: empresas ou indivíduos que fornecem bens e serviços essenciais para as
-                            operações da empresa; </li>
-                        <li>Concorrentes: outras empresas que operam no mesmo setor e que podem impactar a posição
-                            competitiva; </li>
-                        <li>Associações profissionais: grupos do setor que representam e apoiam os interesses das
-                            empresas, por exemplo os Conselhos Regionais de Engenharia e Agronomia (CREA) e Ordem dos
-                            Advogados do Brasil (OAB). </li>
+                        <li>Clientes: Outras organizações ou consumidores que contratam os serviços ou compram os
+                            produtos ofertados </li>
+                        <li>Colaboradores: Funcionários da empresa que desempenham um papel fundamental na entrega dos
+                            serviços ou
+                            produtos e na implementação da estratégia </li>
+                        <li>Acionistas e proprietários:
+                            Indivíduos ou entidades que têm ações da empresa e interesse no seu desempenho financeiro e
+                            sucesso a longo prazo </li>
+                        <li>Parceiros de negócios
+                            Outras empresas ou organizações que colaboram com iniciativas conjuntas, parcerias
+                            estratégicas ou fornecimento de recursos </li>
+                        <li>Comunidade local
+                            Residentes e organizações da comunidade na qual a empresa opera, que podem ser afetados
+                            pelas atividades da organização e que podem se beneficiar ou ser impactados pela práticas de
+                            responsabilidade social corporativa
+                        </li>
+                        <li>Órgãos reguladores
+                            Agências governamentais e outros órgãos reguladores que supervisionam e regulamentam as
+                            atividades da empresa, como, por exemplo, o Instituto Nacional de Metrologia, Qualidade e
+                            Tecnologia (Inmetro), o Ministério da Agricultura e Pecuária (MAPA), o Ministério da
+                            Educação (MEC) </li>
+                        <li>Fornecedores
+                            Empresas ou indivíduos que fornecem bens e serviços essenciais para as operações da empresa
+                        </li>
+                        <li>Concorrentes
+                            Outras empresas que operam no mesmo setor e que podem impactar a posição competitiva </li>
+                        <li>Associações profissionais
+                            Grupos do setor que representam e apoiam os interesses das empresas, por exemplo, os
+                            Conselhos Regionais de Engenharia e Agronomia (CREA) e Ordem dos Advogados do Brasil (OAB)
+                        </li>
                     </ul>
                 </div>
                 <p>
-                    Portanto, a identificação e compreensão dos stakeholders podem variar com o tipo e com o contexto da
-                    organização. A abordagem mais eficaz para definir as partes interessadas em uma empresa específica
-                    ou em
-                    um negócio próprio é realizar um levantamento das relações potenciais que impactam sua produção ou
-                    prestação de serviços, conforme exemplificado anteriormente.
+                    Portanto, a identificação e a compreensão dos <i>stakeholders</i> podem variar com o tipo e com o
+                    contexto
+                    da organização. A abordagem mais eficaz para definir as partes interessadas em uma empresa
+                    específica ou em um negócio próprio é realizar um levantamento das relações potenciais que impactam
+                    sua produção ou prestação de serviços, conforme exemplificado anteriormente.
                 </p>
                 <div class="grafismo">
                     <div class="destaque borda-colorida icone importante">
                         <p>
-                            Em síntese, o envolvimento ativo das partes interessadas (stakeholders) desempenha um papel
+                            Em síntese, o envolvimento ativo das partes interessadas (<i>stakeholders</i>) desempenha um
+                            papel
                             fundamental no sucesso e na sustentabilidade de uma organização. Esse engajamento contribui
-                            para
-                            assegurar que as decisões e ações da empresa reflitam adequadamente as necessidades,
-                            expectativas e
-                            preocupações das diversas partes envolvidas.
+                            para assegurar que as decisões e ações da empresa reflitam adequadamente as necessidades,
+                            expectativas e preocupações das diversas partes envolvidas.
                         </p>
                     </div>
                 </div>
                 <p>
-                    Nesse contexto, nosso próximo item de estudo é um dos aspectos mais fundamentais das organizações:
-                    sua
-                    Missão. A Missão representa a definição fundamental do propósito e razão de ser da organização.
-                    Vamos
-                    estudar mais sobre a missão na próxima subseção.
+                    Neste contexto, o próximo item de estudo é um dos aspectos mais fundamentais das organizações, sua
+                    missão, que representa a definição fundamental do propósito e a razão de ser da organização.
                 </p>
                 <div class="imagem-divisoria">
                     <img src="./img/div.png" class="img-fluid mx-auto d-block mt-5 mb-5 no-print">

@@ -566,7 +566,9 @@ body{
     color: #000;
 }
 
-
+.grafismo.grafismoLeft::before {
+    background: unset
+}
 
 
 
