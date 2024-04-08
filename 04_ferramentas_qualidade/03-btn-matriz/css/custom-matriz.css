@@ -70,7 +70,9 @@ tr {
   filter: drop-shadow(#333 3px 3px 4px);
 }
 
-
+.bg-escuro .img-paragrafo p{
+  color: #000;
+}
 
 
 

@@ -53,11 +53,11 @@ body {
     padding-bottom: 11%;
 }
 
-#booklet{
+#booklet {
     margin-bottom: -5%;
 }
 
-.painel-pdca-gestao{
+.painel-pdca-gestao {
     background: url('./img/painel1_bg-cop.png') no-repeat;
     background-position: top;
     background-size: 33%;
@@ -77,41 +77,33 @@ body {
 .btn-acao {
     position: absolute;
     margin-top: 32%;
-    background-color: transparent;
-    width: 27%;
-    height: 7.1%;
-    margin-left: 21%;
-    border: unset;
+    left: 26%;
+
+}
+
+.btn-acao:hover,
+.btn-planejamento:hover,
+.btn-execucao:hover,
+.btn-verificacao:hover {
+    transform: scale(1.1);
 }
 
 .btn-planejamento {
     position: absolute;
-    margin-top: 31%;
-    background-color: transparent;
-    width: 27.3%;
-    height: 8%;
-    margin-left: 51.7%;
-    border: unset;
+    margin-top: 32%;
+    left: 51.7%;
 }
 
 .btn-execucao {
     position: absolute;
-    margin-top: 57.5%;
-    background-color: transparent;
-    width: 27%;
-    height: 8%;
-    margin-left: 52%;
-    border: unset;
+    margin-top: 59.5%;
+    left: 54%;
 }
 
 .btn-verificacao {
     position: absolute;
-    margin-top: 57.5%;
-    background-color: transparent;
-    width: 27%;
-    height: 7.1%;
-    margin-left: 20%;
-    border: unset;
+    margin-top: 59.5%;
+    left: 23%;
 }
 
 .btn-viagem {

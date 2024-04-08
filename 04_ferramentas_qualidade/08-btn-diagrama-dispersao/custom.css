@@ -21,7 +21,7 @@ body {
     background-image:
     radial-gradient(farthest-corner at 90% 0%, #E08D89 0%, transparent 45%),
         radial-gradient(farthest-corner at -2% 25%, #92ACCE 0%, transparent 25%),
-        linear-gradient(to top, #8aacd0, #adbfdc, #ccd3e7, #e7e8f3, #ffffff);
+        linear-gradient(to top, rgba(138, 172, 208, 0.5), rgba(173, 191, 220, 0.5), rgba(204, 211, 231, 0.5), rgba(231, 232, 243, 0.5), rgba(255, 255, 255, 0.5));
     position: relative;
     background-repeat: no-repeat !important;
     background-size: cover !important;

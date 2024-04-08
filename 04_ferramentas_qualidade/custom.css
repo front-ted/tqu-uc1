@@ -210,9 +210,60 @@ a:hover {
     z-index: 2;
 }
 
+.bt-1-mob{
+    margin-left: -1%;
+    margin-right: 1%;
+}
 
+.bt-2-mob {
+    margin-left: -5%;
+    margin-right: 2%;
+}
 
+.bt-3-mob {
+    margin-left: -6%;
+    margin-right: 2%;
+}
 
+.bt-4-mob {
+    margin-left: -9%;
+    margin-right: 3%;
+}
+
+.bt-5-mob {
+    margin-left: -8%;
+    margin-right: 3%;
+}
+
+.bt-6-mob {
+    margin-left: -10%;
+    margin-right: 3%;
+}
+
+.bt-7-mob {
+    margin-left: -5%;
+    margin-right: 3%;
+}
+
+.bt-8-mob {
+    margin-left: -4%;
+    margin-right: 2%;
+}
+
+.bt-9-mob {
+    margin-left: -6%;
+    margin-right: 2%;
+}
+
+.bt-10-mob {
+    margin-left: -15%;
+    margin-right: 3%;
+}
+
+.bt-11-mob {
+    margin-left: -5%;
+    margin-right: 2%;
+}
 
 
 
@@ -300,7 +351,7 @@ a:hover {
 
 
 
-    
+
 
 
 }
