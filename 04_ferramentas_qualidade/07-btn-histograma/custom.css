@@ -57,6 +57,21 @@ body {
     filter: drop-shadow(#333 3px 3px 4px);
 }
 
+.tabela-plano td,
+tr {
+    border-color: var(--cor-primaria);
+    border-width: 1px !important;
+    border-bottom-width: 1px;
+}
+
+.tabela-plano th {
+    border-color: #fff;
+    border-width: 1px;
+}
+
+.tabela-plano thead {
+    background: linear-gradient(to right, #80ACD3, #004788);
+}
 
 
 @media screen and (max-width:1440px) {
