@@ -299,7 +299,7 @@ th{
   font-family: 'Libre Franklin Bold';
 }
 .pagina h1, .pagina h2, .pagina h3, .pagina h4, .pagina h5, .pagina h6{
-  margin: 1.2rem 0;
+  margin: 1.2rem 0.5rem;
   font-family: 'Libre Franklin Bold';
   color: black;
 }
