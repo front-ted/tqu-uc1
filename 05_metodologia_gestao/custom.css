@@ -58,7 +58,7 @@ body {
 }
 
 .painel-pdca-gestao {
-    background: url('./img/painel1_bg-cop.png') no-repeat;
+    background: url('./img/painel1_bg.png') no-repeat;
     background-position: top;
     background-size: 33%;
     padding-bottom: 8%;
@@ -200,9 +200,9 @@ body {
 }
 
 .bloco-tabelas {
-    background: url('./img/painel1_bg-cop.png') no-repeat;
+    background: url('./img/painel1_bg.png') no-repeat;
     background-position: top;
-    background-size: 58%;
+    background-size: 55%;
     margin-bottom: 5%;
 }
 
@@ -415,6 +415,9 @@ tr {
         display: none;
     }
 
+    .painel-pdca1 {
+        background: unset;
+    }
 
 
 }
