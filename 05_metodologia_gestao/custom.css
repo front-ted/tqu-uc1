@@ -362,6 +362,14 @@ tr {
         bottom: 2%;
     }
 
+    /* .grafismo::after {
+        scale: 0.55;
+    } */
+    .img-div {
+        margin-top: -6%;
+    }
+    .paginas{width: 100% !important;}
+
 }
 
 
