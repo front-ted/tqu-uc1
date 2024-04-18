@@ -36,7 +36,7 @@ body {
 }
 
 .img-div {
-    margin-top: -10%;
+    margin-top: -5%;
 }
 
 .bloco-3 {
@@ -318,6 +318,9 @@ tr {
         margin-left: -26%;
         margin-top: 48%;
     }
+    .img-div {
+        margin-top: -5%;
+    }
 }
 
 
@@ -368,8 +371,13 @@ tr {
     .img-div {
         margin-top: -6%;
     }
-    .paginas{width: 100% !important;}
-
+   .paginas {
+        overflow-x: hidden; /* Esconde a rolagem horizontal */
+      }
+    .paragrafo-padding2{
+        margin-bottom: -5%;
+    }
+    h2{padding-top: 3%;}
 }
 
 
