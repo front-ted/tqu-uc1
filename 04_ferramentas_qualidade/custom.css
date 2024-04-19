@@ -280,6 +280,10 @@ tr {
     background: linear-gradient(to right, #80ACD3, #004788);
 }
 
+.grafico-pareto{
+    width: 85%;
+}
+
 
 @media screen and (max-width:1440px) {
     .borda-esquerda {

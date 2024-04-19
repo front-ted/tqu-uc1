@@ -164,7 +164,7 @@
 }
 .pagina img	{
   display: inline-block;
-  max-width: 60% !important;
+  max-width: 60%;
 }
 .pagina legend{
   display: block;
@@ -418,6 +418,13 @@ button, a {
     color: white;
     background-color: darkgray;
     box-shadow: 0 2px 0 2px rgba(0,0,0,.1);
+}
+
+.grafico-pareto{
+  max-width: 85% !important;
+}
+.img-fluxograma{
+  max-width: 70% !important;
 }
 
 /*----------------*/
