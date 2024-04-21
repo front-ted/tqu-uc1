@@ -49,9 +49,11 @@
   header{
     display: none !important;
   }
-  img, .equacoes, figure, .print-proteger {
+  img, .equacoes, figure, .print-proteger, .figure-img {
     page-break-inside: avoid !important;
     max-width: 500px !important;
+    margin: auto;
+    display: block;
   }
   a[href]:after {
     content: " (" attr(href) ")";
@@ -300,9 +302,32 @@
 }
 
 .grafico-pareto{
-  max-width: 85% !important;
+  max-width: 90% !important;
 }
 
 .img-fluxograma{
   max-width: 70% !important;
+  align-items: center !important;
+}
+
+.img-grafico{
+  align-items: center !important;
+  max-width: 85% !important;
+  margin: auto; 
+  display: block;
+}
+
+.img-diagrama1{
+  max-width: 100% !important;
+}
+.img-diagrama2{
+  max-width: 100% !important;
+}
+
+.img-fluxograma2{
+  max-width: 90% !important;
+}
+
+.container.referencias p{
+  word-wrap: break-word;
 }

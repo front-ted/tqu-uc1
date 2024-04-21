@@ -421,12 +421,22 @@ button, a {
 }
 
 .grafico-pareto{
-  max-width: 85% !important;
+  max-width: 90% !important;
 }
 .img-fluxograma{
   max-width: 70% !important;
+  align-items: center !important;
 }
 
+.img-diagrama1{
+  max-width: 100% !important;
+}
+.img-fluxograma2{
+  max-width: 90% !important;
+}
+.container.referencias p{
+  word-wrap: break-word;
+}
 /*----------------*/
 .carousel-indicators, .carousel-control, .btn-group, .nav-tabs, .nav-pills, .dropdown-menu, nav .pagination, nav .pager, .progress, .navbar, iframe, .embed-responsive, .modal-footer, .pagination  {
   display: none !important;
