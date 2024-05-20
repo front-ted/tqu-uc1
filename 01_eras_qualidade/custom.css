@@ -29,6 +29,9 @@ body {
     overflow-x: hidden;
 }
 
+.titulo-menor{
+    font-size: 27px;
+}
 
 
 @media only screen and (max-width:1440px) {
