@@ -55,6 +55,26 @@
     display: none;
 }
 
+.bg-escuro .bg-podcast-01 p {
+    color: #000 !important;
+}
+
+.bg-escuro .bg-podcast-02 p {
+    color: #000 !important;
+}
+
+.bg-escuro .bg-podcast-03 p {
+    color: #000 !important;
+}
+
+.bg-escuro .bg-podcast-04 p {
+    color: #000 !important;
+}
+
+.bg-escuro .bg-podcast-05 p {
+    color: #000 !important;
+}
+
 body {
     background-image: url('../../01_experimentacao/img/textura.png');
     background-image: radial-gradient(farthest-corner at -2% 25%, #92ACCE 0%, transparent 25%), radial-gradient(farthest-corner at 50% 100%, #CF9993 0%, transparent 15%);
