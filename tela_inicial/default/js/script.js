@@ -1,4 +1,4 @@
-
+var uc = "TDSUC12" // aqui vai a sigla do curso e o numero da uc
 
 $(document).ready(function(){
 
@@ -6,24 +6,12 @@ $(document).ready(function(){
 		$('html, body').animate({scrollTop:0}, 'slow'); //slow, medium, fast
 	})
 
-
-	
-	// Verifica e completa todos os cards nos lugares certos
-	//
 	$("li[data-item]").each(function(){
-		
-		// Inserindo o código da UC na frente de todos os links. Isso garante que nunca vá haver 2 iguais
-		//
-		var data = uc + "_" + $(this).data('item');
-		$(this).attr("data-item", data);
-		//
-		// Atualizado a variavel data para garantir que também busque por itens que possuam o código da UC.
-		
-		//
-		var local =JSON.parse(localStorage.getItem(data))
+		var data = $(this).data('item');
+		var local =JSON.parse(localStorage.getItem(uc+"_"+data))
 		if (local != null && local['uc'] == uc) {
 			var grupo = $("#"+ local['grupo'] + "").attr('data-index')
-			console.log(uc, local)
+		
 			if(grupo == 'lista-fazendo')	{
 				$("li[data-item='"+local['item']+"'").addClass('fazendo')
 				$("li[data-item='"+local['item']+"'] .dropdown-menu .mover-fazendo").hide()	
@@ -43,12 +31,12 @@ $(document).ready(function(){
 	})
 
 
-	if($( window ).width() <= 991 && !localStorage.getItem('primeiraMobile')){
+	if($( window ).width() <= 991 && !localStorage.getItem(uc+"_"+'primeiraMobile')){
 		$('.mao').show();
 		setTimeout(function(){
 			$('.mao').hide()
 		}, 5500)
-		localStorage.setItem("primeiraMobile",true)
+		localStorage.setItem(uc+"_"+"primeiraMobile",true)
 	}
 
 	$(".drag-item").on("taphold",function(){
@@ -62,8 +50,7 @@ $(document).ready(function(){
 		}
 	});
 })
-// Interatividade com leitor de tela:
-//
+
 $('.mover-fazer').click(function(){
 	var item = $(this).parent().parent().parent().attr('data-item')
 	var aux = $(this).parent().parent().parent().parent().attr('id')
@@ -82,23 +69,48 @@ $('.mover-fazer').click(function(){
 	$("li[data-item='"+item+"'").prependTo($("#"+ id + ""))
 
 	var salvarItem = {"grupo": id, "item": item, "uc": uc}
-	localStorage.setItem(item,JSON.stringify(salvarItem))
+	localStorage.setItem(uc+"_"+item,JSON.stringify(salvarItem))
 	verificaCompleto(grupo)
+	alternaBotoesBubble("lista-fazer", $(this).parent());
 
 })
 
 $('.mover-fazendo').click(function(){
 	var item = $(this).parent().parent().parent().attr('data-item')
 	var aux = $(this).parent().parent().parent().parent().attr('id')
-	var id = parseInt(aux) + 1 
-
-	if ($("#"+ id + "").attr('data-index') == "lista-fazendo"){
+	var id = parseInt(aux) + 1 ;
+	console.log(item, aux, id);
+	console.log('mover fazendo')
+	/*if ($("#"+ id + "").attr('data-index') == "lista-fazendo"){
 		$(this).parent().parent().parent().addClass("fazendo")
 		$("li[data-item='"+item+"'").prependTo($("#"+ id + ""))
 
 		var salvarItem = {"grupo": id, "item": item, "uc": uc}
-		localStorage.setItem(item,JSON.stringify(salvarItem))
+		localStorage.setItem(uc+"_"+item,JSON.stringify(salvarItem));
+		console.log('executou')
+	} else{
+		console.log('nao executou')
+	}*/
+
+	if($(this).parent().parent().parent().parent().attr('data-index') == 'lista-fazer'){
+		id = parseInt(aux) + 1 
+	} else if ($(this).parent().parent().parent().parent().attr('data-index') == 'lista-feito'){
+		id = parseInt(aux) - 1
 	}
+	
+	$(this).parent().parent().parent().removeClass("feito")
+	$(this).parent().parent().parent().removeClass("fazer")
+	$(this).parent().parent().parent().addClass("fazendo")
+	
+	$("li[data-item='"+item+"'").prependTo($("#"+ id + ""))
+
+	var salvarItem = {"grupo": id, "item": item, "uc": uc}
+	localStorage.setItem(uc+"_"+item,JSON.stringify(salvarItem))
+	
+	verificaCompleto(grupo)
+
+	alternaBotoesBubble('lista-fazendo', $(this).parent());
+	
 })
 
 $('.mover-feito').click(function(){
@@ -117,45 +129,42 @@ $('.mover-feito').click(function(){
 	$("li[data-item='"+item+"'").prependTo($("#"+ id + ""))
 
 	var salvarItem = {"grupo": id, "item": item, "uc": uc}
-	localStorage.setItem(item,JSON.stringify(salvarItem))
+	localStorage.setItem(uc+"_"+item,JSON.stringify(salvarItem))
 	verificaCompleto(grupo)
+	alternaBotoesBubble('lista-feito', $(this).parent())
 
 })
-//
-// Fim da interatividade com leitor de tela.
 
-// Ao clicar, coloca o item no próximo card referente.
-//
-$('.link').click(function(){
-	
+$('.link').on('click',function(){
 	if ($(this).parent().parent().parent().attr("data-index") == "lista-fazer"){
 		var aux = $(this).parent().parent().parent().attr('id') 
 		var id = parseInt(aux) + 1 
-		
 		$(this).parent().parent().addClass('fazendo')
 		$(this).parent().parent().prependTo($("#"+ id + ""))
-		
-		if (localStorage.getItem(uc + '_verificaPrimeira') !== "nao_mais"){
-			//return <- pra que esse return? Ele é o responsável por não salvar quando clica.
-			
-		// } else {
+		if (localStorage.getItem(uc+"_"+'verificaPrimeira')){
+			return
+		} else {
 			$('.setinha').show();
 			$('.exemplo').show();
-		}else {
-			$('.setinha').hide();
-			$('.exemplo').hide();
 		}
 
 		var item = $(this).parent().parent().attr("data-item")
 		var salvarItem = {"grupo": id, "item": item, "uc": uc}
 	
-		
-		localStorage.setItem(item,JSON.stringify(salvarItem))
+
+		localStorage.setItem(uc+"_"+item,JSON.stringify(salvarItem))
 		
 	
-
 	}
-	// console.log(salvarItem); 
+})
+
+$('.imprimir').on('click', function(){
+	let printPage = "print/index.html?conteudo=" + $(this).data('conteudo')
+	if($(this).data('imgpath') != undefined)
+		printPage += "&imgpath=" + $(this).data('imgpath')
+	if($(this).data('startpoint') != undefined)
+		printPage += "&startpoint=" + $(this).data('startpoint')
+	window.open(printPage, '_new')
 })
 
 var grupo = ""
@@ -182,10 +191,12 @@ dragula([
 	document.getElementById('13'),
 	document.getElementById('14'),
 	document.getElementById('15'),
+	document.getElementById('16'),
+	document.getElementById('17'),
+	document.getElementById('18'),
 ])
 
 .on('drag', function(el) {
-	
 	
 	// add 'is-moving' class to element being dragged
 	// el.classList.add('is-moving');
@@ -196,7 +207,6 @@ dragula([
 	listaOriginal =  el.parentElement.getAttribute('id')
 })
 .on('dragend', function(el) {
-	
 	var verificaGrupo = retornaGrupo()
 	verificaCompleto(verificaGrupo)
 	if (el.parentElement.parentElement.parentElement.getAttribute('data-group') == verificaGrupo){
@@ -208,9 +218,10 @@ dragula([
 		var lista = el.parentElement.getAttribute('data-index')
 		//var elemento = el.getAttribute('id')
 		
-		//localStorage.setItem(elemento,lista)
+		//localStorage.setItem(uc+"_"+elemento,lista)
 		console.log(el)
 		var i = el.getAttribute('data-item') 
+		console.log("lista:",lista)
 		if (lista == 'lista-fazer') {
 			el.setAttribute('class', 'drag-item fazer')
 			$("li[data-item='"+i+"'] .dropdown-menu li.mover-fazendo").show()
@@ -224,10 +235,10 @@ dragula([
 			$("li[data-item='"+i+"'] .dropdown-menu li.mover-fazendo").hide()
 		}
 		if (lista == 'lista-feito') {
-			if (localStorage.getItem(uc + '_verificaPrimeira')!== "nao_mais"){
+			if (!localStorage.getItem(uc+"_"+'verificaPrimeira')){
 				$('.exemplo').hide()
 				$('.setinha').hide()
-				localStorage.setItem(uc + '_verificaPrimeira', "nao_mais")
+				localStorage.setItem(uc+"_"+'verificaPrimeira', true)
 			}
 			el.setAttribute('class', 'drag-item feito')
 			$("li[data-item='"+i+"'] .dropdown-menu li.mover-fazer").show()
@@ -239,7 +250,7 @@ dragula([
 		var grupo = el.parentElement.getAttribute('id')
 
 		var salvarItem = {"grupo": grupo, "item": item, "uc": uc}
-		localStorage.setItem(item,JSON.stringify(salvarItem))
+		localStorage.setItem(uc+"_"+item,JSON.stringify(salvarItem))
 
 		// add the 'is-moved' class for 600ms then remove it
 		window.setTimeout(function() {
@@ -320,7 +331,7 @@ function fazendo(item, lista){
 		$("li[data-item='"+item+"'").prependTo($("#"+ id + ""))
 
 		var salvarItem = {"grupo": id, "item": item, "uc": uc}
-		localStorage.setItem(item,JSON.stringify(salvarItem))
+		localStorage.setItem(uc+"_"+item,JSON.stringify(salvarItem))
 	}
 
 }
@@ -337,7 +348,7 @@ function feito(item,lista){
 	$("li[data-item='"+item+"'").prependTo($("#"+ id + ""))
 
 	var salvarItem = {"grupo": id, "item": item, "uc": uc}
-	localStorage.setItem(item,JSON.stringify(salvarItem))
+	localStorage.setItem(uc+"_"+item,JSON.stringify(salvarItem))
 }
 
 function verificaCompleto(lista){
@@ -345,5 +356,25 @@ function verificaCompleto(lista){
 		$("div[data-group='"+ lista + "']").addClass('disabled')
 	} else {
 		$("div[data-group='"+ lista + "']").removeClass('disabled')
+	}
+}
+
+
+function alternaBotoesBubble(local, container){
+	console.log('alternando os botoes')
+	if (local == 'lista-fazer') {
+		$(container).find("li.mover-fazendo").show()
+		$(container).find("li.mover-feito").show()
+		$(container).find("li.mover-fazer").hide()
+	}
+	if (local == 'lista-fazendo') {	
+		$(container).find("li.mover-fazer").show()
+		$(container).find("li.mover-feito").show()
+		$(container).find("li.mover-fazendo").hide()
+	}
+	if (local == 'lista-feito') {		
+		$(container).find("li.mover-fazer").show()
+		$(container).find("li.mover-feito").hide()
+		$(container).find("li.mover-fazendo").show()
 	}
 }
