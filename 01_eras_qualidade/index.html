@@ -92,8 +92,11 @@
                     de
                     serviços em escala global.
                 </p>
-                <div class="espera-video d-block mx-auto no-print" aria-hidden="true">
-                    Espera video
+                <div class="ratio ratio-16x9 mb-5">
+                    <iframe src="https://www.youtube.com/embed/H7Zd_czGi68?si=dG-qW_2qhiA-TImz"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
                 </div>
                 <p class="no-print">
                     Os áudios a seguir trarão mais detalhes sobre as eras da qualidade e suas características.
@@ -112,14 +115,14 @@
                                     <div class="bg-podcast no-print">
                                         <div class="d-flex justify-content-center flex-column align-items-center">
                                             <div class="audio-player no-print">
-                                                <audio>
-                                                    <source src="podcast/podcast.mp3" type="audio/mpeg">
+                                                <audio id="audio1">
+                                                    <source src="./audios/01_inspecao.mp3" type="audio/mpeg">
                                                 </audio>
                                                 <div class="row">
                                                     <p class="text-center">Inspeção</p>
                                                     <div class="botoes">
-                                                        <button title="Tocar" class="btn-play btn-player"></button>
-                                                        <button title="Pause" class="btn-pause btn-player"></button>
+                                                        <button title="Tocar" class="btn-play btn-player" data-audio="audio1"></button>
+                                                        <button title="Pause" class="btn-pause btn-player" data-audio="audio1"></button>
                                                         <button title="Transcrição" data-bs-toggle="modal"
                                                             data-bs-target="#modal-transcricao-audio1"
                                                             class="btn-transcricao btn-player"></button>
@@ -131,24 +134,28 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-9"></div>
-                            <div class="col">
-                                <div class="gradient-border bg-podcast-02">
-                                    <div class="bg-podcast no-print">
-                                        <div class="d-flex justify-content-center flex-column align-items-center">
-                                            <div class="audio-player pad-0 no-print">
-                                                <audio>
-                                                    <source src="podcast/podcast.mp3" type="audio/mpeg">
-                                                </audio>
-                                                <div class="row">
-                                                    <p class="text-center">Controle de qualidade <br> estatísticos</p>
-                                                    <div class="botoes">
-                                                        <button title="Tocar" class="btn-play btn-player"></button>
-                                                        <button title="Pause" class="btn-pause btn-player"></button>
-                                                        <button title="Transcrição" data-bs-toggle="modal"
-                                                            data-bs-target="#modal-transcricao-audio2"
-                                                            class="btn-transcricao btn-player"></button>
+                        <div class="podcasts-conteudo2">
+                            <div class="row">
+                                <div class="col-9"></div>
+                                <div class="col">
+                                    <div class="gradient-border bg-podcast-02">
+                                        <div class="bg-podcast no-print">
+                                            <div class="d-flex justify-content-center flex-column align-items-center">
+                                                <div class="audio-player pad-0 no-print">
+                                                    <audio id="audio2">
+                                                        <source src="./audios/02_controle_qualidade_est.mp3"
+                                                            type="audio/mpeg">
+                                                    </audio>
+                                                    <div class="row">
+                                                        <p class="text-center">Controle de qualidade <br> estatísticos
+                                                        </p>
+                                                        <div class="botoes">
+                                                            <button title="Tocar" class="btn-play btn-player" data-audio="audio2"></button>
+                                                            <button title="Pause" class="btn-pause btn-player" data-audio="audio2"></button>
+                                                            <button title="Transcrição" data-bs-toggle="modal"
+                                                                data-bs-target="#modal-transcricao-audio2"
+                                                                class="btn-transcricao btn-player"></button>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -164,14 +171,15 @@
                                     <div class="bg-podcast no-print">
                                         <div class="d-flex justify-content-center flex-column align-items-center">
                                             <div class="audio-player pad-0 no-print">
-                                                <audio>
-                                                    <source src="podcast/podcast.mp3" type="audio/mpeg">
+                                                <audio id="audio3">
+                                                    <source src="./audios/03_garantia_qualidade_total.mp3"
+                                                        type="audio/mpeg">
                                                 </audio>
                                                 <div class="row">
                                                     <p class="text-center">Garantia da qualidade <br> total</p>
                                                     <div class="botoes">
-                                                        <button title="Tocar" class="btn-play btn-player"></button>
-                                                        <button title="Pause" class="btn-pause btn-player"></button>
+                                                        <button title="Tocar" class="btn-play btn-player" data-audio="audio3" ></button>
+                                                        <button title="Pause" class="btn-pause btn-player" data-audio="audio3" ></button>
                                                         <button title="Transcrição" data-bs-toggle="modal"
                                                             data-bs-target="#modal-transcricao-audio3"
                                                             class="btn-transcricao btn-player"></button>
@@ -190,14 +198,15 @@
                                     <div class="bg-podcast no-print">
                                         <div class="d-flex justify-content-center flex-column align-items-center">
                                             <div class="audio-player pad-04 no-print">
-                                                <audio>
-                                                    <source src="podcast/podcast.mp3" type="audio/mpeg">
+                                                <audio id="audio4">
+                                                    <source src="./audios/04_gestao_estrategica_qualidade.mp3"
+                                                        type="audio/mpeg">
                                                 </audio>
                                                 <div class="row">
                                                     <p class="text-center">Gestão estratégica <br> da qualidade</p>
                                                     <div class="botoes">
-                                                        <button title="Tocar" class="btn-play btn-player"></button>
-                                                        <button title="Pause" class="btn-pause btn-player"></button>
+                                                        <button title="Tocar" class="btn-play btn-player" data-audio="audio4"></button>
+                                                        <button title="Pause" class="btn-pause btn-player" data-audio="audio4"></button>
                                                         <button title="Transcrição" data-bs-toggle="modal"
                                                             data-bs-target="#modal-transcricao-audio4"
                                                             class="btn-transcricao btn-player"></button>
@@ -216,14 +225,14 @@
                                     <div class="bg-podcast no-print">
                                         <div class="d-flex justify-content-center flex-column align-items-center">
                                             <div class="audio-player pad-05 no-print">
-                                                <audio>
-                                                    <source src="podcast/podcast.mp3" type="audio/mpeg">
+                                                <audio id="audio5">
+                                                    <source src="./audios/05_qualidade_40.mp3" type="audio/mpeg">
                                                 </audio>
                                                 <div class="row">
                                                     <p class="text-center">Qualidade 4.0</p>
                                                     <div class="botoes">
-                                                        <button title="Tocar" class="btn-play btn-player"></button>
-                                                        <button title="Pause" class="btn-pause btn-player"></button>
+                                                        <button title="Tocar" class="btn-play btn-player" data-audio="audio5"></button>
+                                                        <button title="Pause" class="btn-pause btn-player" data-audio="audio5"></button>
                                                         <button title="Transcrição" data-bs-toggle="modal"
                                                             data-bs-target="#modal-transcricao-audio5"
                                                             class="btn-transcricao btn-player"></button>
@@ -243,14 +252,14 @@
                         <div class="bg-podcast no-print">
                             <div class="d-flex justify-content-center flex-column align-items-center">
                                 <div class="audio-player no-print">
-                                    <audio>
-                                        <source src="podcast/podcast.mp3" type="audio/mpeg">
+                                    <audio id="audio6">
+                                        <source src="./audios/01_inspecao.mp3" type="audio/mpeg">
                                     </audio>
                                     <div class="row">
                                         <p class="text-center">Inspeção</p>
                                         <div class="botoes">
-                                            <button title="Tocar" class="btn-play btn-player"></button>
-                                            <button title="Pause" class="btn-pause btn-player"></button>
+                                            <button title="Tocar" class="btn-play btn-player" data-audio="audio6"></button>
+                                            <button title="Pause" class="btn-pause btn-player" data-audio="audio6"></button>
                                             <button title="Transcrição" data-bs-toggle="modal"
                                                 data-bs-target="#modal-transcricao-audio1"
                                                 class="btn-transcricao btn-player"></button>
@@ -264,14 +273,14 @@
                         <div class="bg-podcast no-print">
                             <div class="d-flex justify-content-center flex-column align-items-center">
                                 <div class="audio-player no-print">
-                                    <audio>
-                                        <source src="podcast/podcast.mp3" type="audio/mpeg">
+                                    <audio id="audio7">
+                                        <source src="./audios/02_controle_qualidade_est.mp3" type="audio/mpeg">
                                     </audio>
                                     <div class="row">
                                         <p class="text-center">Controle de qualidade estatísticos</p>
                                         <div class="botoes">
-                                            <button title="Tocar" class="btn-play btn-player"></button>
-                                            <button title="Pause" class="btn-pause btn-player"></button>
+                                            <button title="Tocar" class="btn-play btn-player" data-audio="audio7"></button>
+                                            <button title="Pause" class="btn-pause btn-player" data-audio="audio7"></button>
                                             <button title="Transcrição" data-bs-toggle="modal"
                                                 data-bs-target="#modal-transcricao-audio2"
                                                 class="btn-transcricao btn-player"></button>
@@ -285,14 +294,14 @@
                         <div class="bg-podcast no-print">
                             <div class="d-flex justify-content-center flex-column align-items-center">
                                 <div class="audio-player no-print">
-                                    <audio>
-                                        <source src="podcast/podcast.mp3" type="audio/mpeg">
+                                    <audio id="audio8">
+                                        <source src="./audios/03_garantia_qualidade_total.mp3" type="audio/mpeg">
                                     </audio>
                                     <div class="row">
                                         <p class="text-center">Garantia da qualidade total</p>
                                         <div class="botoes">
-                                            <button title="Tocar" class="btn-play btn-player"></button>
-                                            <button title="Pause" class="btn-pause btn-player"></button>
+                                            <button title="Tocar" class="btn-play btn-player" data-audio="audio8"></button>
+                                            <button title="Pause" class="btn-pause btn-player" data-audio="audio8"></button>
                                             <button title="Transcrição" data-bs-toggle="modal"
                                                 data-bs-target="#modal-transcricao-audio3"
                                                 class="btn-transcricao btn-player"></button>
@@ -306,14 +315,14 @@
                         <div class="bg-podcast no-print">
                             <div class="d-flex justify-content-center flex-column align-items-center">
                                 <div class="audio-player no-print">
-                                    <audio>
-                                        <source src="podcast/podcast.mp3" type="audio/mpeg">
+                                    <audio id="audio9">
+                                        <source src="./audios/04_gestao_estrategica_qualidade.mp3" type="audio/mpeg">
                                     </audio>
                                     <div class="row">
                                         <p class="text-center">Gestão estratégica da qualidade</p>
                                         <div class="botoes">
-                                            <button title="Tocar" class="btn-play btn-player"></button>
-                                            <button title="Pause" class="btn-pause btn-player"></button>
+                                            <button title="Tocar" class="btn-play btn-player" data-audio="audio9"></button>
+                                            <button title="Pause" class="btn-pause btn-player" data-audio="audio9"></button>
                                             <button title="Transcrição" data-bs-toggle="modal"
                                                 data-bs-target="#modal-transcricao-audio4"
                                                 class="btn-transcricao btn-player"></button>
@@ -327,14 +336,14 @@
                         <div class="bg-podcast no-print">
                             <div class="d-flex justify-content-center flex-column align-items-center">
                                 <div class="audio-player pad-05 no-print">
-                                    <audio>
-                                        <source src="podcast/podcast.mp3" type="audio/mpeg">
+                                    <audio id="audio10">
+                                        <source src="./audios/05_qualidade_40.mp3" type="audio/mpeg">
                                     </audio>
                                     <div class="row">
                                         <p class="text-center">Qualidade 4.0</p>
                                         <div class="botoes">
-                                            <button title="Tocar" class="btn-play btn-player"></button>
-                                            <button title="Pause" class="btn-pause btn-player"></button>
+                                            <button title="Tocar" class="btn-play btn-player" data-audio="audio10"></button>
+                                            <button title="Pause" class="btn-pause btn-player" data-audio="audio10"></button>
                                             <button title="Transcrição" data-bs-toggle="modal"
                                                 data-bs-target="#modal-transcricao-audio5"
                                                 class="btn-transcricao btn-player"></button>
@@ -1912,7 +1921,7 @@
     <!--Jquery-->
     <script src="../assets/js/jquery-3.6.0.min.js"></script>
     <!--Áudio customizado-->
-    <script src="../assets/js/audio-player.js"></script>
+    <script src="./js/player-audios.js"></script>
     <!--Splide - slideshow-->
     <script src="../assets/js/splide.min.js"></script>
     <!--Prog'n'roll - barra de progresso conforme rola a página-->
