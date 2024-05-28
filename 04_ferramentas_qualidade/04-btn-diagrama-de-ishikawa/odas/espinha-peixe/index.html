@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Objeto de aprendizagem – Diagrama de Ishikawa</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <div class="conteudo m-1=2">
+    <div id="tela1">
+      <div class="intro-frases-encaixa">
+        <h1 class="title-encaixa-frase">O diagrama de Ishikawa</h1>
+        <p>Seja bem-vindo ao objeto de aprendizagem sobre o diagrama de Ishikawa, que também é conhecido como diagrama
+          de causa e efeito. Essa ferramenta tem o objetivo de ilustrar as várias causas que levam a um problema. Você
+          estudou que a estrutura do diagrama lembra o esqueleto de um peixe, cujas espinhas são agrupadas em seis
+          grandes categorias, classificadas em 6 Ms: máquina, mão de obra, método, manutenção, material e meio ambiente.</p>
+      </div>
+      <div class="bg-tela-um">
+        <img class="w-100 position-relative" src="assets/img/bg-confeitaria.png"
+          alt="confeitaria clientes e funcionarios">
+        <div class="paragrafo-intro position-absolute">
+          <p>Com este objeto de aprendizagem, você testará seus conhecimentos sobre o uso do diagrama de Ishikawa por
+            meio de uma situação fictícia. <br>Vamos lá? </p>
+          <button class="btn btn-lg btn-iniciar btn-block som-clique " data-bs-target="#exampleModalToggle"
+            data-bs-toggle="modal">Começar</button>
+        </div>
+
+      </div>
+    </div>
+    <div id="tela2" style="display: none;">
+      <div class="intro-frases-encaixa ">
+        <h1 class="title-encaixa-frase">Diagrama de Ishikawa</h1>
+        <p>Agora, você precisa usar o diagrama de Ishikawa para organizar essas possíveis causas em cada um dos 6 Ms da
+          espinha de peixe. Antes de começar, lembre-se de ler cuidadosamente cada possível causa e escolher a opção que você acredita ser a correta em cada um dos Ms. </p>
+      </div>
+
+      <div class="row">
+        <div data-resp="m" class="mercado-item col mercado-item-m" draggable="true">Inspeções de qualidade demoradas
+        </div>
+        <div data-resp="p" class="mercado-item col mercado-item-p" draggable="true">Problemas com aplicativo de entrega
+          on-line </div>
+        <div data-resp="r" class="mercado-item col mercado-item-r" draggable="true">Embalagens erradas rompendo-se no
+          transporte </div>
+        <div data-resp="q" class="mercado-item col mercado-item-q" draggable="true">Trânsito intenso em horário de
+          entregas </div>
+        <div data-resp="o" class="mercado-item col mercado-item-o" draggable="true">Falta de pessoal na equipe de
+          entrega
+        </div>
+      </div>
+      <div class="row">
+        <div data-resp="n" class="mercado-item col mercado-item-n" draggable="true">Erros no controle de pedidos no
+          sistema </div>
+        <div data-resp="p" class="mercado-item col mercado-item-p" draggable="true">Produtos rejeitados no controle de
+          qualidade </div>
+        <div data-resp="o" class="mercado-item col mercado-item-o" draggable="true">Treinamento insuficiente para
+          entregadores </div>
+        <div data-resp="q" class="mercado-item col mercado-item-q" draggable="true">Clima adverso afetando a entrega
+        </div>
+        <div data-resp="s" class="mercado-item col mercado-item-s" draggable="true">Atraso de entrega de doces e bolos
+        </div>
+      </div>
+
+      <div class="espinha-de-peixe position-relative">
+        <div class="imagens-peixe">
+          <img class="img-fluid w-100" id="peixe" src="assets/img/espinha_de_Peixe.png" alt="">
+        </div>
+
+
+        <div data-resp="m" class="espaco-mercado position-absolute col item item1"> </div>
+        <div data-resp="n" class="espaco-mercado position-absolute col item item2"> </div>
+        <div data-resp="o" class="espaco-mercado position-absolute col item item3"> </div>
+        <div data-resp="p" class="espaco-mercado position-absolute col item item4"> </div>
+        <div data-resp="q" class="espaco-mercado position-absolute col item item5"> </div>
+        <div data-resp="r" class="espaco-mercado position-absolute col item item6"> </div>
+        <div data-resp="s" class="espaco-mercado position-absolute col item item7"> </div>
+
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+    tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bordinha">
+          <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Bem-vindo(a) técnico(a) em qualidade!</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-modal">
+
+          <p class="paragrafo-modal"> Você é o(a) técnico(a) em qualidade de uma confeitaria chamada "Sonho Doce",
+            especializada
+            em produção
+            artesanal de bolos e doces. O gestor responsável pela confeitaria identificou um aumento das reclamações
+            por
+            atrasos nas entregas e você foi chamado para verificar a causa do problema juntamente com a equipe de
+            logística. Para isso, você deve utilizar as ferramentas da qualidade.</p>
+          <img src="assets/img/peixe-inteiro.png" alt="ilustração de um peixe inteiro" class="img-fluid">
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Avançar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+    tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bordinha">
+          <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Resultado brainstorming</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-modal">
+          <p class="paragrafo-modal">
+            Um brainstorming foi realizado e chegou-se às seguintes possíveis causas:
+          </p>
+          <ul class="paragrafo-modal">
+            <li>Inspeções de qualidade demoradas</li>
+            <li>Problemas com aplicativo de entrega on-line</li>
+            <li>Embalagens erradas rompendo-se no transporte</li>
+            <li>Trânsito intenso em horário de entregas</li>
+            <li>Falta de pessoal na equipe de entrega</li>
+            <li>Erros no controle de pedidos no sistema</li>
+            <li>Produtos rejeitados no controle de qualidade</li>
+            <li>Treinamento insuficiente para entregadores</li>
+            <li>Clima adverso afetando a entrega</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Voltar</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="modal fade" id="modalFeedbackPositivo" tabindex="-1" aria-labelledby="modalFeedbackPositivoLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bordinha">
+          <h1 class="modal-title fs-5 " id="modalFeedbackPositivoLabel">Você acertou!</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="paragrafo-modal">Parabéns! Você está realmente entendendo o uso do diagrama de Ishikawa. Ótimo
+            trabalho e continue assim! </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="modalFeedbackNegativo" tabindex="-1" aria-labelledby="modalFeedbackNegativoLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bordinha">
+          <h1 class="modal-title fs-5 " id="modalFeedbackNegativoLabel">Você errou!</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="paragrafo-modal">Oops! Parece que houve um equívoco. Este “M” não está classificado adequadamente.
+            Revise o seu material de estudos sobre ferramentas da qualidade, ele auxiliará você a ter mais domínio deste
+            assunto.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="modalFeedbackFinal" tabindex="-1" aria-labelledby="modalFeedbackFinalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bordinha">
+          <h1 class="modal-title fs-5" id="modalFeedbackFinalLabel">Parabéns!</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col">
+              <p class="paragrafo-modal">Parabéns, você concluiu com sucesso o uso do diagrama de Ishikawa! Esperamos
+                que você tenha muito sucesso no uso e na aplicação dessa ferramenta. Que você consiga, com seu
+                conhecimento aprofundado nesta atividade e neste conteúdo, resolver muitos problemas que podem ocorrer
+                na empresa que você atuar.<br> Parabéns por sua participação e até a próxima! </p>
+            </div>
+            <div class="col">
+              <img src="assets/img/personagem.png" alt="mulher sorrindo" class="img-fluid">
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <audio id="audio-acerto">
+    <source src="assets/audio/acerto.mp3" type="audio/mpeg">
+  </audio>
+
+  <audio id="audio-errado">
+    <source src="assets/audio/erro.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>
