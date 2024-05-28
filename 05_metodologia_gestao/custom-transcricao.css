@@ -1,0 +1,11 @@
+
+body {
+    background-image: radial-gradient(farthest-corner at -2% 25%, #92ACCE 0%, transparent 25%), radial-gradient(farthest-corner at 50% 100%, #CF9993 0%, transparent 15%);
+    position: relative;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+    /* background-attachment: fixed !important; */
+    height: auto;
+    overflow-x: hidden;
+}

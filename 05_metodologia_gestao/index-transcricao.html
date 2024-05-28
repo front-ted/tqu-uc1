@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <!-- Inserir o tíutlo do conhecimento na tag title -->
+    <title>Metodologias de gestão: PDCA (<i>plan</i>, <i>do</i>, <i>check</i> e <i>act</i>) e MASP (método de análise e
+        solução de problemas)</title>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link rel="stylesheet" href="../assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/fa/css/all.min.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="../assets/css/animate.min.css" />
+    <!-- hover.css https://ianlunn.github.io/Hover/ -->
+    <link rel="stylesheet" href="../assets/css/hover-min.css" />
+    <!--Splide - slideshow-->
+    <link rel="stylesheet" href="../assets/css/splide.min.css">
+    <!-- Print -->
+    <link rel="stylesheet" href="../assets/css/print.css">
+    <!-- Preloader -->
+    <link rel="stylesheet" href="../assets/css/preloader.css">
+    <!-- Áudio customizado -->
+    <link rel="stylesheet" href="../assets/css/player.css">
+    <!-- Estilos do template -->
+    <link rel="stylesheet" href="../assets/css/cores.css">
+    <link rel="stylesheet" href="../assets/css/template.css">
+    <link rel="stylesheet" href="./custom-transcricao.css">
+</head>
+
+<body class="bg-claro">
+    <!-- Preloader OBRIGATÓRIO -->
+    <div class="preloader">
+        <div class="anim"></div>
+        <p>Aguarde enquanto o conteúdo é carregado.</p>
+    </div>
+    <!-- Marca d'água OBRIGATÓRIA -->
+    <img src="../assets/images/logo_senac_colorido.png" id="marcadaguaLogo">
+
+    <header id="topo">
+        <div class="topo-logo">
+            <div class="container">
+                <h1 id="nome-curso" class="only-print">Técnico em Qualidade</h1>
+            </div>
+            <div id="toggleButton" class="btn-tema_pagina no-print" onclick="toggleBackgroundImage()"></div>
+        </div>
+    </header>
+
+    <!-- Section principal #booklet OBRIGATÓRIO para funcionamento do print -->
+    <section id="booklet">
+        <!-- Section .paginas OBRIGATÓRIA para funcionamento da paginação e do print -->
+        <div class="layer-preta no-print"></div>
+        <section class="paginas">
+            <div class="pagina no-print">
+                <div class="container">
+                    <h3>Que tal pensar em alguns exemplos?</h3>
+                    <p>
+                        Imagine um restaurante que está enfrentando reclamações constantes dos clientes sobre a qualidade
+                        dos pratos servidos. À primeira vista, o problema pode parecer relacionado apenas à cozinha ou aos
+                        chefs de culinária. No entanto, ao realizar uma análise da causa raiz, pode-se descobrir que o
+                        problema real está na cadeia de fornecimento de ingredientes.
+                    </p>
+                   <p>
+                        Ao investigar mais a fundo, pode-se identificar que um dos fornecedores de alimentos do restaurante
+                        está entregando ingredientes de baixa qualidade ou vencidos. Isso, por sua vez, afeta diretamente a
+                        qualidade dos pratos preparados na cozinha. Portanto, a causa fundamental do problema não está na
+                        equipe de culinária, mas sim na cadeia de fornecimento.
+                   </p>
+                    <p>
+                        Ao abordar a causa raiz, o restaurante pode tomar medidas para melhorar a seleção de fornecedores,
+                        implementar controles de qualidade mais rigorosos na recepção de ingredientes e garantir que todos
+                        os produtos atendam aos padrões necessários. Isso não apenas resolverá as reclamações dos clientes,
+                        mas também prevenirá futuros problemas relacionados à qualidade dos pratos.
+                    </p>
+                   <p>
+                        É possível considerar ainda outra situação cotidiana como exemplo. Suponha que você esteja
+                        enfrentando uma dor de cabeça e decida tomar um analgésico para aliviar o sintoma. Nesse caso, você
+                        está lidando com o efeito imediato da dor sem abordar a causa raiz, que pode estar relacionada à
+                        falta de sono, ao estresse, à desidratação ou a outros fatores. O analgésico proporciona um alívio
+                        temporário, porém, para resolver a questão de maneira mais efetiva, seria crucial você identificar e
+                        tratar a causa raiz. Isso poderia envolver aprimorar seus hábitos de sono, adotar estratégias para
+                        gerenciar o estresse ou garantir uma adequada hidratação.
+                   </p>
+                   <p>
+                        Da mesma forma, nas organizações, muitas vezes se atua nos sintomas superficiais (efeitos) ao invés
+                        de atuar nas causas raízes.
+                   </p>
+                   <a href=" #" class="voltar-topo no-print" aria-hidden="true"><img
+                    src="../assets/images/bt_topo.svg"></a>
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+
+    <!-- Paginação-->
+    <!--         <footer class="text-center no-print d-flex justify-content-center mx-auto">
+            <ul class="pagination">
+
+            </ul>
+        </footer> -->
+    </section>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="../assets/bootstrap/bootstrap.bundle.min.js"></script>
+    <!--Jquery-->
+    <script src="../assets/js/jquery-3.6.0.min.js"></script>
+    <!--Áudio customizado-->
+    <script src="../assets/js/audio-player.js"></script>
+    <!--Splide - slideshow-->
+    <script src="../assets/js/splide.min.js"></script>
+    <!--Prog'n'roll - barra de progresso conforme rola a página-->
+    <script src="../assets/js/prognroll.min.js"></script>
+    <!--Scripts gerais-->
+    <script src="../assets/js/geral.js"></script>
+
+    <script>
+        $(function () {
+            $("body").prognroll();
+        });
+
+        $(".btn-tema_pagina").click(function () {
+            console.log($(".btn-tema_pagina"))
+            if ($("body").hasClass('bg-claro')) {
+                console.log("sim");
+                $("body").removeClass('bg-claro')
+                $("body").addClass("bg-escuro");
+            } else if ($("body").hasClass('bg-escuro')) {
+                console.log("não");
+                $("body").removeClass('bg-escuro')
+                $("body").addClass("bg-claro")
+            }
+        });
+    </script>
+
+    <!-- Handtalk -->
+    <script>
+        var scriptElem = document.createElement("script");
+        scriptElem.src = "https://plugin.handtalk.me/web/latest/handtalk.min.js",
+            scriptElem.charset = "UTF-8",
+            scriptElem.onload = function () {
+                window.ht = new HT({
+                    token: "bf5b7efb148a829a126a0e0c9fd533bf",
+                    align: "top",
+                    videoEnabled: true,
+                    ytEmbedReplace: true,
+                    mobileConfig: {
+                        align: "right",
+                        actionsAlign: "top",
+                        customButtonStyle: {
+                            borderRadius: "6px",
+                            size: "38px",
+                            horizontalMargin: "13px",
+                            bottomMargin: "140px",
+                            rightMargin: "40px"
+                        }
+                    }
+                });
+                $('.ht-skip').attr("aria-hidden", "true")
+            },
+            document.body.appendChild(scriptElem);
+
+    </script>
+
+</body>
+
+</html>
