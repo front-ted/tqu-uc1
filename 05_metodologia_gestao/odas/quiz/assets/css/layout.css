@@ -1,402 +1,317 @@
-@import "custom.css";
 
-html, body {
-    /* height: 100%; */
-}
 
-body {
-    background-position: top center;
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-color: #333;
-    font-size: 26px;
-    /* padding-top: 80px;  */
-    /* paddingtop 80 pra não ficar embaixo do topo fixo */
+*{
+    box-sizing: border-box;
 }
-.bto-padrao {
-  display: block;
-  color: white;
-  background-color: var(--cor-textos);
-  border: 0px;
-  padding: 20px 60px;
-  display: inline-block;
-}
-.bto-padrao:hover {
-  background-color: var(--paletta-azul-hover);
-}
-p, button {
-  font-family: var(--font-textos);
-  font-size: 1em;
-  color: var(--cor-textos);
-}
-h2 {
-  font-family: var(--font-titulo);
-  color: var(--cor-titulo);
-  font-size: 1em;
-  text-transform: uppercase;
-  text-shadow: 2px 2px 0px #000000a6;
-  margin-top: 50px;
-}
-.top-slide {
-  max-width: 924px;
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: auto;
-  position: relative;
-}
-.ico-feedback {
-  display: block;
-  width: 100%;
-  height: auto;
-  position: relative;
-  max-width: 66px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.ico-feedback::before{
-  content: "";
-  width: 100%;
-  height: auto;
-  padding-top: 96%;
-  display: block;
-}
-
-.texto-feedback.container p {
-  text-align: left;
-}
-#navegacao {
-  margin-top: 30px;
-  width: 100%;
-  text-align: center;
-  padding-bottom: 20px;
-  position: fixed;
-  bottom: 0px;
-  left: 0px;
-  background-color: #d9edfb;
-  padding-top: 20px;
-  box-shadow: 0px -5px 0px #3333334f;
-}
-.pergunta {
-  width: 100%;
-  height: auto;
-  background-color: var(--paletta-amarelo-base);
-  border: 2px solid;
-  border-color: var(--paletta-azul-base);
-  padding: 20px;
-  box-shadow: 3px 3px 0px var(--cor-textos);
-}
-.pergunta p {
-  max-width: 670px;
-  width: 100%;
-  text-align: center;
-  padding: 0px;
-  margin: auto;
-}
-.bto, .bto.desativar, .bto.desativar:hover {
-  background: none;
-  border: 0px none;
-  color: var(--cor-textos);
-  margin-bottom: 10px;
-  width: 100%;
-  text-align: left;
-}
-.bto::before, .bto:hover.desativar::before {
-  content:attr(data-label);
-  width: 54px;
-  height: 55px;
-  text-align: center;
-  display: inline-block;
-  border: 2px solid var(--cor-textos);
-  background-color: var(--paletta-amarelo-base);
-  padding: 4px;
-  margin-right: 10px;
-  box-shadow: 3px 3px 0px var(--cor-textos);
-}
-.bto:hover {
-  color: var(--paletta-azul-hover);
-}
-.bto:hover::before {
-  background-color: var(--paletta-amarelo-hover);
-}
-.bto.positivo::before, .bto-dragindrop-item.positivo, .bto.positivo:hover::before {
-  background-color: var(--feedback-positivo);
-}
-.bto.negativo::before, .bto-dragindrop-item.negativo, .bto.negativo:hover::before {
-  background-color: var(--feedback-negativo);
-}
-.bto.positivo, .bto-dragindrop-item.positivo, .bto.positivo::before {
-  color: var(--cor-textos);
-}
-.bto.negativo, .bto-dragindrop-item.negativo, .bto.negativo::before {
-  color: var(--cor-textos);
-}
-.respostas {
-  max-width: 750px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 40px;
-  width: 100%;
-}
-.top-slide-final .pergunta.pt-5.pb-5 {
-  width: 100%;
-  max-width: 736px;
-  margin: auto;
-}
-.top-slide-final .pergunta.pt-5.pb-5 p {
-  width: 100%;
-  max-width: 604px;
-}
-#contador {
-  font-size: 70px;
-}
-.texto-feedback.container 
-{
-  max-width: 670px;
-  width: 100%;
-}
-header.senac {
-    background-color: #50D7E2;
-  }
-  header.senac {
-    height: 80px;
-    z-index: 99;
-    margin-top: 0;
-    top: 0;
-    padding-top: 0;
-    position: fixed;
-    width: 100%;
-  }
-
-  .header-tecnicos {
-    position: relative;
-    overflow: hidden;
-    height: 80px;
-    background-position: right,center;
-    background-repeat: no-repeat, no-repeat;
-    background-size: contain, cover;
-  }
-  .container {
-    max-width: 990px;
-    width: 100%;
-  }
-  #nome-curso {
-    color: #fff;
-  }
-  #nome-curso {
-    position: relative;
-    display: block;
-    float: left;
-    top: 1.7em;
-    top: 15%;
-    left: 2.0em;
-    font-size: 0.923em;
-    font-family: 'robotoregular', Arial, Verdana, Helvetica;
-    text-transform: uppercase;
-  }
-  #logo-senac {
-    position: relative;
-    float: right;
-    right: 2.7em;
-    top: 1em;
-  }
-
-  .link-fonte {
-    --max-lines: 1;
-  position: relative;
-  max-height: calc(var(--lh) * var(--max-lines));
-  overflow: hidden;
-  padding-right: 1rem;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  display: inline-block;
-  max-width: 100%;
-
-  }
-  /* .link-fonte::before {
-    position: absolute;
-    content: "...";
-    bottom: 0;
-    right: 0;
-  } */
-
-  @media screen and (max-width: 800px) {
-    .container {
-      max-width: 96%;
-    }
-  }
-  h1{
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
-#top-quiz {
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    padding-top: 0px;
-  }
-
-  .containers.d-flex {
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: stretch;
-    margin-top: 20px;
-    max-width: 640px;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .containers > .container {
-    width: 100%;
-    padding: 0 15px;
-    overflow: hidden;
-  }
-
-  .container-alvo {
-    width: 100%;
-    background-color: #64aad5;
-    border-radius: 5px;
-    box-shadow: inset 0 0 8px #183b4f;
-    border: 3px solid #c0e8dc;
-    position: relative;
-    min-height: 50px;
-    padding: 10px;
-    max-width: 380px;
-    margin: auto;
-  }
- 
-  /* .img-relacionarcom {
+/*LOADER*/
+#loader{
+    width:100%;
     max-width: 500px;
-    max-height: 500px;
-  }
-  */
-  .img-relacionarcom {
-    max-width: 260px;
-    width: 100%;
-    height: auto;
-  }
-
-  .respostas.dragindrop {
-    text-align: center;
-    max-width: 80%;
-    width: 100%;
-
-  }
-  div#top-slides {
-    padding-bottom: 50px;
-}
-  button.bto-dragindrop-item .fa-solid {
-    color: #64998a;
-    margin-right: 10px;
-    font-size: 16px;
-    top: -3px;
-    position: relative;
-  }
-
-button.bto-dragindrop-item
-  {
-    text-align: left;
-    border: 0px none;
-    background: none;
-    display: inline;
-    width: auto;
-    padding: 5px 10px;
-    border-radius: 5px;
-    background-color: white;
-    margin:10px;
-    border: 3px solid #64998a;
-    box-shadow: 0 3px 0 #64998a;
-  }
-  button.bto-dragindrop-item::before {
-    content: unset;
-    width: unset;
-    height: unset;
-    text-align: unset;
-    display: unset;
-    border: unset;
-    background-color: unset;
-    padding: unset;
-    margin-right: unset;
-    box-shadow: unset;
-  }
-button.bto-dragindrop-item.desativar {
-  opacity: 0.5;
-}
-  .container-alvo.preenchido {
-    padding: 0px;
-  }
-  .container-alvo button {
-    margin: 0px;
-    box-shadow: none;
-    width: 100%;
-    text-align: center;
-  }
-  .container-alvo button .fa-solid {
-    display: none;
-  }
-
-  .respostas > .ondragging {  }
-
-
-  .legenda {
-    font-size: 16px;
-    text-align: center;
+    border-radius: 20px;
+    height: 40px;
+    border: 2px solid black;
     overflow: hidden;
-    max-width: 380px;
-    margin: auto;
-  }
+    margin-bottom: 20px;
+}
+#barraLoader{
+    width: 0%;
+    height: 100%;
+    background-color: #F3DD57;
+}
 
-  @media screen and (max-width:1000px){
-    #nome-curso.titulo-longo{
-    width:70%;
-    top:0;
-    }
-  }
-  @media only screen and (max-width: 991px){
-    #top-quiz{
-      padding-left: 20px;
-      padding-right: 20px;
-      padding-bottom: 20px;
-  }
-  }
-  @media only screen and (max-width: 550px){
-    #nome-curso{
-      left:-0.2em;
-      color:#fff;
-      font-size:0.6153846153846154em;
-      /*margin-top:1.41em;		*/
-      top:18%;
-      text-transform:uppercase !important;
-    }
-    #logo-senac{
-      right:1.2em;
-      width:20%;
-    }
-  }
+#loadScreen{
+    position: fixed;
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    flex-flow: column;
+}
+
+#btCursorLock{
+    position: absolute;
+    z-index: 2;
+    bottom: 10px;
+    right: 60px;
+}
+
+.cursores{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    z-index: 5;
+    left: Calc(50% - 25px);
+    top: Calc(50% - 25px);
+}
+.cursores.cursor01{    
+    border-radius: 100%;
+    background-image: url(../img/cursor01.png);
+    background-size: contain;
+    background-position: center center;
+}
+.cursores.cursor02{
+    background-image: url(../img/cursor02.png);
+    background-size: contain;
+    background-position: center center;
+    left: 50%;
+    top: 50%;
+}
+.cursores.cursor03{
+    background-image: url(../img/cursor03.png);
+    background-size: contain;
+    background-position: center center;
+    left: 50%;
+    top: 50%;
+}
+.cursores.cursor04{
+   border-radius: 100%;
+   border: 2px solid white;
+}
 
 
-@keyframes sprite {
- 100% {
-   background-position: -1410px;
+#btGoFullScreen,#btExitFullScreen{
+    position: absolute;
+    z-index: 2;
+    bottom: 10px;
+    right: 10px;
+}
+#btExitFullScreen{
+    display: none;
+}
+
+#loadMsg{
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: bold;
+}
+.hidden{
+    display: none !important;
+}
+/*soh aparecerá no ie*/
+#msgIe{
+    display: none;
+    height: 100vh;
+    width: 100vw;
+    z-index: 100000;
+}
+#msgIe .positioner{
+   
+    height: 100%;
+    width: 100%;
+    display: block;
+    padding-top: 30vh;
+}
+
+#application{
+    background-color: grey;
+    height: 100vh;
+}
+#topMenuBar{
+    background-color: whitesmoke;
+    height: 60px;
+}
+#topMenuBar .containerTitle{
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+}
+#topMenuBar h1{   
+   font-size: 1.7rem; 
+   text-align: center;
+   
+}
+
+.logo{
+    max-width: 100%;
+    height: 40px;
+
+    position: absolute;
+    right: 10px;
+    top: 10px;
+
+}
+
+#unityContainer{
+    position: relative;   
+    background-color: magenta;
+    height: 100%; 
+    margin:0;
+   
  }
-}
-.over-loader{
-  width:100%;
-  height:100%;
-  background-color:rgba(255,255,255,1);
-  position:fixed;
-  display: table;
-  z-index:9999;
-}
-.over-cell{
-  display: table-cell;
-  text-align: center;
-  vertical-align:middle;
+
+
+#unityApp{     
+    width: 100%;
+    height:100%;
+    /*
+    width: 82vw; 
+    height: Calc(82vw * 9/16); 
+    max-width:90em;
+    max-height:Calc(90em * 9/16);   
+    */
+    background-color: #0c0c0c;
+    display:block; 
+    margin:0 auto; 
 }
 
 
 
-  
+
+
+
+
+
+
+
+#relatorioContainer{
+   top: 0;
+   left: 0;
+   position: fixed;
+   z-index: 9999999;
+   width: 100vw;
+   height: 100vh;
+   background-color: lightgrey;    
+}
+#relatorioContainer header{
+    box-sizing: border-box;
+    background-color: grey;
+    color:white;
+    padding: 10px;
+    height: 60px;
+
+}
+#relatorioContainer header h1{
+    font-size: 2rem;
+}
+#relatorioContainer header .btClose{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+
+
+}
+#relatorioContainer .container{
+    padding-top: 1px;
+    background-color: white;
+    height: Calc(100vh - 80px);
+    overflow-y: auto;
+    padding-bottom: 50px;
+    box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.2);
+}
+
+#relatorioContainer #relatorioPdfEmbed{
+    /*width: 480px;
+    height: 640px;
+    */
+    width:80vw;
+    height: Calc(80vw * 4/3);
+    max-width: 500px;
+    max-height: Calc(500px * 4/3);
+    display: block;
+    margin: 20px auto;
+    border: 1px solid;
+}
+
+
+/*mensagem de confirmaçao que aparecem em dispositivos móveis, vai ser visivel quando o app estiver em landscape, aparece antes do carregamento*/
+#mensagem{
+    position: absolute;
+    width: 80vw;
+    margin-left: 0;
+    top: 10vw;
+    background-color: #EDBF53;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 5px 5px 0 0 rgba(0,0,0,0.3);
+    font-size: 1.3rem;
+    display: none;
+}
+#mensagem button{
+    padding: 20px;
+    width: 180px;
+    border-radius: 20px;
+    border:0;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+
+
+
+/*mensagens em telas em modo porta retrato*/
+#msgPortrait{
+    display: none;
+    animation: fadeIn forwards 300ms ease-in;
+    width: 100vw;
+    height: 100vh;
+    padding: 30px; 
+    text-align: center;
+    position: relative;
+    z-index: 100;
+    background-color: white;
+}
+
+
+@media screen and (max-width:990px) and (orientation: portrait){
+    .main{
+        display: none;
+    }
+    #msgPortrait{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        animation: fadeIn forwards 300ms ease-in;
+    }
+    #msgPortrait h1 span{
+        font-size: 10rem;
+    }
+
+   
+}
+
+@media screen and (max-width:990px){
+    #mensagem{
+        display: block;
+    }
+
+    .bottomBar {       
+        background-color: transparent;
+         position: fixed;
+         padding: 10px;
+         width: 30vw;
+         right: 0;
+         bottom: 0;
+     }
+ 
+     #topMenuBar {
+         background-color: transparent !important;      
+         position: fixed;
+         top: 0;
+         left: 0;
+         z-index: 10;
+         width: 100%;
+         color: white;
+     }
+
+     #unityContainer {
+        position: relative;
+        background-color: magenta;
+        height: 100% ;
+        margin: 0;
+    }
+}
+
+
+@media screen and (max-width:600px){
+    #loadScreen > img {
+        max-width: 150px;
+    }
+}
